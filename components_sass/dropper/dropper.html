@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../components_css/main.css" />
+    <title>Dropper</title>
+    <style>
+      body {
+        background-color: #151515
+      }
+
+      .wrapper {
+        width: 237px;
+        margin: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+
+      <details class="dropper" open>
+          <summary class="dropper__toggler">
+            <div class="dropper__toggler-left">
+              <svg class="dropper__location">
+                <use xlink:href="../../assets/svg_sprite.svg#location"></use>
+              </svg>
+              <span class="dropper__city">Москва</span>
+            </div>
+            <div class="dropper__arrow-wrapper">
+              <svg class="dropper__arrow">
+                <use xlink:href="../../assets/svg_sprite.svg#arrow_down"></use>
+              </svg>
+            </div>
+          </summary>
+          <div class="dropper__window">
+              <ul class="dropper__menu">
+                  <li class="dropper__item dropper__item_checked">Москва</li>
+                  <li class="dropper__item">Рязань</li>
+                  <li class="dropper__item">Владивосток</li>
+              </ul>
+          </div>
+      </details>
+
+    </div>
+  </body>
+</html>

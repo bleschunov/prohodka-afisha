@@ -1,0 +1,90 @@
+@keyframes invisiblyGrowFontSize
+  0%
+    font-size: 0
+    opacity: 0
+  100%
+    font-size: 1em
+    opacity: 0
+
+@keyframes fadeIn
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+
+.dropper
+  cursor: pointer
+  transition: height 1000ms linear
+
+  &[open] .dropper__arrow
+    transform: rotate(-180deg)
+
+  &[open] .dropper__toggler
+    border-radius: 10px 10px 0 0
+    background-color: $grey-1
+    border: none
+    color: $grey-3
+
+  // &[open] .dropper__window
+  //   animation-name: invisiblyGrowFontSize, fadeIn
+  //   animation-duration: 500ms, 200ms
+  //   animation-delay: 0ms, 500ms
+
+  &__toggler
+    display: flex
+    justify-content: space-between
+    background-color: $black-4
+    padding: 17px 15px
+    font-size: 16px
+    font-weight: 400
+    color: $white
+    border: 1px solid $grey-2
+    border-radius: 10px
+    transition: background-color border-radius 200ms ease-in-out
+
+    &::-webkit-details-marker
+      display: none
+
+  &__toggler-left
+    display: flex
+    align-items: center
+
+  &__location
+    color: $accent
+    width: 15px
+    height: 18px
+
+  &__city
+    margin-left: 8px
+
+  &__arrow-wrapper
+    justify-self: flex-end
+    width: 18px
+    height: 18px
+    background-color: $accent
+    border-radius: 3px
+    text-align: center
+
+  &__arrow
+    width: 13px
+    height: 11px
+    color: $white
+    transition: transform 200ms ease-in-out
+
+  &__window
+    background-color: $white
+    padding: 16px
+    border-radius: 0 0 10px 10px
+
+  &__menu
+    list-style: none
+    padding: 0
+    margin: 0
+
+  &__item
+    line-height: 22px
+    font-size: 14px
+    font-weight: 400
+
+    &_checked
+      font-weight: 600
