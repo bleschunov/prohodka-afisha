@@ -110,6 +110,7 @@ a {
 .card__blur {
   background: rgba(42, 42, 42, 0.45);
   backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
   padding: 16px 20px;
 }
 .card__title {
