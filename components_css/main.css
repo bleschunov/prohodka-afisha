@@ -1,6 +1,7 @@
 :root {
   font-family: "Gilroy", sans-serif;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -23,7 +24,9 @@ a {
   color: #FFFFFF;
 }
 .button:hover {
-  transform: scale(0.997);
+  -webkit-transform: scale(0.997);
+      -ms-transform: scale(0.997);
+          transform: scale(0.997);
 }
 
 .link {
@@ -40,7 +43,9 @@ a {
   color: #000000;
 }
 .link:hover {
-  transform: scale(0.997);
+  -webkit-transform: scale(0.997);
+      -ms-transform: scale(0.997);
+          transform: scale(0.997);
 }
 
 .tag {
@@ -48,7 +53,11 @@ a {
   padding: 6px 0;
   font-size: 10px;
   text-align: center;
+  -webkit-transition: -webkit-transform 100ms ease-in-out;
+  transition: -webkit-transform 100ms ease-in-out;
+  -o-transition: transform 100ms ease-in-out;
   transition: transform 100ms ease-in-out;
+  transition: transform 100ms ease-in-out, -webkit-transform 100ms ease-in-out;
 }
 .tag_light {
   background-color: #06D10E;
@@ -61,18 +70,38 @@ a {
   font-weight: 500;
 }
 .tag:hover {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@-webkit-keyframes like {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  40% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  to {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
 }
 
 @keyframes like {
   from {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   40% {
-    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
   }
   to {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
 }
 .card {
@@ -81,14 +110,23 @@ a {
   display: inline-block;
 }
 .card__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
   height: 100%;
 }
 .card__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row-reverse;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   position: relative;
   padding: 15px;
 }
@@ -109,7 +147,8 @@ a {
 }
 .card__blur {
   background: rgba(42, 42, 42, 0.45);
-  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
   padding: 16px 20px;
 }
 .card__title {
@@ -127,8 +166,12 @@ a {
 }
 .card__footer {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .card__tag-wrapper {
   width: 79px;
@@ -142,8 +185,10 @@ a {
 }
 .card__backend:checked ~ .card__frontend_checked {
   visibility: visible;
-  animation: like 100ms ease-in-out;
-  animation-fill-mode: forwards;
+  -webkit-animation: like 100ms ease-in-out;
+          animation: like 100ms ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 .card__backend:checked ~ .card__frontend_unchecked {
   display: none;
@@ -165,7 +210,10 @@ a {
   height: 265px;
 }
 .card_vertical .card__wrapper {
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .card_vertical .card__blur {
   border-radius: 0 0 10px 10px;
@@ -175,7 +223,10 @@ a {
   height: 145px;
 }
 .card_horizontal .card__wrapper {
-  flex-direction: row-reverse;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 .card_horizontal .card__blur {
   border-radius: 10px 0 0 10px;
