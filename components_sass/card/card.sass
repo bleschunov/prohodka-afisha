@@ -1,0 +1,113 @@
+@keyframes like
+  from
+    transform: scale(1)
+  40%
+    transform: scale(0.8)
+  to
+    transform: scale(1.1)
+
+.card
+  background: center / cover no-repeat
+  border-radius: 10px
+  display: inline-block
+
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    width: 100%
+    height: 100%
+
+  &__header
+    display: flex
+    flex-direction: row-reverse
+    position: relative
+    padding: 15px
+
+  &__repost-wrapper
+    padding: 4px 7px
+    border: $white solid 1px
+    border-radius: 5px
+
+    &:hover, &:hover *
+      border-color: $accent
+      color: $accent
+
+  &__repost
+    width: 13px
+    height: 11px
+    color: $white
+    cursor: pointer
+
+
+  &__blur
+    background: $bg-blur-white
+    backdrop-filter: blur(6px)
+    padding: 16px 20px
+
+  &__title
+    font-size: 18px
+    font-weight: 600
+    color: $white
+    margin-bottom: 19px
+
+  &__info
+    font-size: 12px
+    font-weight: 500
+    line-height: 18px
+    color: $white
+    margin-bottom: 15px
+
+  &__footer
+    position: relative
+    display: flex
+    justify-content: space-between
+
+  &__tag-wrapper
+    width: 79px
+
+  &__backend
+    width: 0
+    height: 0
+    opacity: 0
+    visibility: hidden
+    position: absolute
+
+    &:checked ~ .card__frontend_checked
+      visibility: visible
+      animation: like 100ms ease-in-out
+      animation-fill-mode: forwards
+
+    &:checked ~ .card__frontend_unchecked
+      display: none
+
+  &__frontend
+    width: 26px
+    height: 23px
+    cursor: pointer
+    color: $white
+
+    &_checked
+      visibility: hidden
+
+    &:hover
+      color: $red
+
+  &_vertical
+    width: 206px
+    height: 265px
+
+    & .card__wrapper
+      flex-direction: column
+
+    & .card__blur
+      border-radius: 0 0 10px 10px
+
+  &_horizontal
+    width: 252px
+    height: 145px
+
+    & .card__wrapper
+      flex-direction: row-reverse
+
+    & .card__blur
+      border-radius: 10px 0 0 10px
