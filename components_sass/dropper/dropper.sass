@@ -1,20 +1,31 @@
-@keyframes invisiblyGrowFontSize
-  0%
-    font-size: 0
-    opacity: 0
-  100%
-    font-size: 1em
-    opacity: 0
-
-@keyframes fadeIn
-  0%
-    opacity: 0
-  100%
-    opacity: 1
-
 .dropper
-  cursor: pointer
-  transition: height 1000ms linear
+
+  &_light
+    & .dropper
+      &__toggler
+        background-color: $black-4
+        color: $white
+        border: 1px solid $grey-2
+
+      &__arrow-wrapper
+        background-color: $accent
+
+      &__arrow
+        color: $white
+
+
+  &_dark
+    & .dropper
+      &__toggler
+        background-color: $grey-1
+        color: $black-1
+
+      &__arrow-wrapper
+        background-color: $white
+        border: 1px solid $grey-4
+
+      &__arrow
+        color: $black-3
 
   &[open] .dropper__arrow
     transform: rotate(-180deg)
@@ -25,22 +36,14 @@
     border: none
     color: $grey-3
 
-  // &[open] .dropper__window
-  //   animation-name: invisiblyGrowFontSize, fadeIn
-  //   animation-duration: 500ms, 200ms
-  //   animation-delay: 0ms, 500ms
-
   &__toggler
+    cursor: pointer
     display: flex
     justify-content: space-between
-    background-color: $black-4
     padding: 17px 15px
     font-size: 16px
     font-weight: 400
-    color: $white
-    border: 1px solid $grey-2
     border-radius: 10px
-    transition: background-color border-radius 200ms ease-in-out
 
     &::-webkit-details-marker
       display: none
@@ -61,14 +64,12 @@
     justify-self: flex-end
     width: 18px
     height: 18px
-    background-color: $accent
     border-radius: 3px
     text-align: center
 
   &__arrow
     width: 13px
     height: 11px
-    color: $white
     transition: transform 200ms ease-in-out
 
   &__window
@@ -86,5 +87,19 @@
     font-size: 14px
     font-weight: 400
 
-    &_checked
+  &__backend
+    width: 0
+    height: 0
+    visibility: none
+    position: absolute
+    opacity: 0
+
+  &__frontend
+    cursor: pointer
+
+  &__backend:checked + .dropper__frontend
+    font-weight: 600
+
+    &:hover
       font-weight: 600
+      cursor: pointer

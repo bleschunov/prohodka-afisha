@@ -18,12 +18,40 @@
   <body>
     <div class="wrapper">
 
-      <details class="dropper" open>
+      <details class="dropper dropper_light" id="cityDropper">
           <summary class="dropper__toggler">
             <div class="dropper__toggler-left">
               <svg class="dropper__location">
                 <use xlink:href="../../assets/svg_sprite.svg#location"></use>
               </svg>
+              <span class="dropper__city" id="currentCity"></span>
+            </div>
+            <div class="dropper__arrow-wrapper">
+              <svg class="dropper__arrow">
+                <use xlink:href="../../assets/svg_sprite.svg#arrow_down"></use>
+              </svg>
+            </div>
+          </summary>
+          <div class="dropper__window">
+              <ul class="dropper__menu" id="cityMenu">
+                <template id="item">
+                  <li class="dropper__item">
+                    <label>
+                      <input class="dropper__backend" type="radio" name="city_menu" />
+                      <div class="dropper__frontend">Москва</div>
+                    </label>
+                  </li>
+                </template>
+              </ul>
+          </div>
+      </details>
+
+    </div>
+    <div class="wrapper">
+
+      <details class="dropper dropper_dark">
+          <summary class="dropper__toggler">
+            <div class="dropper__toggler-left">
               <span class="dropper__city">Москва</span>
             </div>
             <div class="dropper__arrow-wrapper">
@@ -34,13 +62,15 @@
           </summary>
           <div class="dropper__window">
               <ul class="dropper__menu">
-                  <li class="dropper__item dropper__item_checked">Москва</li>
+                  <!-- <li class="dropper__item dropper__item_checked">Москва</li>
                   <li class="dropper__item">Рязань</li>
-                  <li class="dropper__item">Владивосток</li>
+                  <li class="dropper__item">Владивосток</li> -->
               </ul>
           </div>
       </details>
 
     </div>
+
+    <script src="../../assets/js/cities.js"></script>
   </body>
 </html>

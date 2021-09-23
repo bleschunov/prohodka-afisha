@@ -181,27 +181,27 @@ a {
   border-radius: 10px 0 0 10px;
 }
 
-@keyframes invisiblyGrowFontSize {
-  0% {
-    font-size: 0;
-    opacity: 0;
-  }
-  100% {
-    font-size: 1em;
-    opacity: 0;
-  }
+.dropper_light .dropper__toggler {
+  background-color: #333333;
+  color: #FFFFFF;
+  border: 1px solid #828282;
 }
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.dropper_light .dropper__arrow-wrapper {
+  background-color: #06D10E;
 }
-.dropper {
-  cursor: pointer;
-  transition: height 1000ms linear;
+.dropper_light .dropper__arrow {
+  color: #FFFFFF;
+}
+.dropper_dark .dropper__toggler {
+  background-color: #F3F3F3;
+  color: #000000;
+}
+.dropper_dark .dropper__arrow-wrapper {
+  background-color: #FFFFFF;
+  border: 1px solid #C4C4C4;
+}
+.dropper_dark .dropper__arrow {
+  color: #200E32;
 }
 .dropper[open] .dropper__arrow {
   transform: rotate(-180deg);
@@ -213,16 +213,13 @@ a {
   color: #BDBDBD;
 }
 .dropper__toggler {
+  cursor: pointer;
   display: flex;
   justify-content: space-between;
-  background-color: #333333;
   padding: 17px 15px;
   font-size: 16px;
   font-weight: 400;
-  color: #FFFFFF;
-  border: 1px solid #828282;
   border-radius: 10px;
-  transition: background-color border-radius 200ms ease-in-out;
 }
 .dropper__toggler::-webkit-details-marker {
   display: none;
@@ -243,14 +240,12 @@ a {
   justify-self: flex-end;
   width: 18px;
   height: 18px;
-  background-color: #06D10E;
   border-radius: 3px;
   text-align: center;
 }
 .dropper__arrow {
   width: 13px;
   height: 11px;
-  color: #FFFFFF;
   transition: transform 200ms ease-in-out;
 }
 .dropper__window {
@@ -268,8 +263,22 @@ a {
   font-size: 14px;
   font-weight: 400;
 }
-.dropper__item_checked {
+.dropper__backend {
+  width: 0;
+  height: 0;
+  visibility: none;
+  position: absolute;
+  opacity: 0;
+}
+.dropper__frontend {
+  cursor: pointer;
+}
+.dropper__backend:checked + .dropper__frontend {
   font-weight: 600;
+}
+.dropper__backend:checked + .dropper__frontend:hover {
+  font-weight: 600;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=main.css.map */
