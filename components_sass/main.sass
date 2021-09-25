@@ -3,6 +3,7 @@ $black-1: #000000
 $black-2: #151515
 $black-3: #200E32
 $black-4: #333333
+$black-5: #4F4F4F
 $grey-1: #F3F3F3
 $grey-2: #828282
 $grey-3: #BDBDBD
@@ -11,12 +12,16 @@ $red: #FF0000
 $blue: #0093E5
 
 $bg-blur-white: rgba(42, 42, 42, 0.45)
+$opacitybg: rgba(0, 78, 12, 0.5)
 
 $accent: #06D10E
 
 :root
   font-family: 'Gilroy', sans-serif
   box-sizing: border-box
+
+body
+  margin: 0
 
 h1, h2, h3, h4, h5, h6, p
   margin: 0
@@ -30,3 +35,6 @@ a
 @import ./tag/tag
 @import ./card/card
 @import ./dropper/dropper
+@import ./input/input
+@import ./header/header
+@import ./opacitybg/opacitybg

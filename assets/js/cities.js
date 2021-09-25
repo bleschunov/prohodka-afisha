@@ -1,3 +1,5 @@
+//let response = fetch("prohodka.com/cities")
+
 const data = {
 "status": "OK",
 "cities":
@@ -41,9 +43,8 @@ for (city of data.cities) {
   list.lastElementChild.addEventListener('click', () => {
     dropper.removeAttribute('open');
   })
-
-
 }
+list.firstElementChild.nextElementSibling.querySelector('.dropper__backend').setAttribute('checked', 'true');
 
 function cacheCityName (cityName) {
   cityName = city.name;

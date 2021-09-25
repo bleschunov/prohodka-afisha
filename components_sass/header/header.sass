@@ -1,0 +1,84 @@
+.header
+  background: $black-2
+
+  &__top
+    display: flex
+    padding: 28px 22px 28px
+    gap: 60px
+
+  &__left
+    display: flex
+    flex-grow: 1
+    align-items: center
+    gap: 20px
+
+  &__right
+    display: flex
+    align-items: center
+    gap: 20px
+
+  &__logo
+    color: $accent
+    width: 55px
+    height: 51px
+
+  &__dropper-wrapper
+    width: 237px
+    position: relative
+
+  &__toggler
+    z-index: 2
+    position: relative
+
+  &__window
+    z-index: 2
+
+  &__bottom
+    display: flex
+    padding: 28px 22px 28px
+    align-items: center
+    justify-content: space-between
+    background-color: $grey-1
+    gap: 30px
+
+    @media screen and (min-width: 700px)
+      display: none
+
+  &__input-wrapper
+    flex-grow: 1
+
+    &_top
+      display: none
+      @media screen and (min-width: 700px)
+        display: block
+
+  &__icons
+    &_top
+      display: none
+
+      @media screen and (min-width: 700px)
+        display: block
+
+  &__cart
+    width: 35px
+    height: 28px
+    color: $black-3
+    cursor: pointer
+
+    &:hover
+      color: $accent
+
+    @media screen and (min-width: 700px)
+      color: $white
+
+  &__person
+    width: 25px
+    height: 25px
+    color: $black-3
+    cursor: pointer
+
+    &:hover
+      color: $accent
+
+    @media screen and (min-width: 700px)
+      color: $white

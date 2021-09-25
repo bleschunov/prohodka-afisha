@@ -1,5 +1,4 @@
 .dropper
-
   &_light
     & .dropper
       &__toggler
@@ -27,14 +26,18 @@
       &__arrow
         color: $black-3
 
-  &[open] .dropper__arrow
-    transform: rotate(-180deg)
+  &[open]
+    & .dropper__arrow
+      transform: rotate(-180deg)
 
-  &[open] .dropper__toggler
-    border-radius: 10px 10px 0 0
-    background-color: $grey-1
-    border: none
-    color: $grey-3
+    & .dropper__toggler
+      border-radius: 10px 10px 0 0
+      background-color: $grey-1
+      border: none
+      color: $grey-3
+
+    & .dropper__opacitybg
+      display: block
 
   &__toggler
     cursor: pointer
@@ -76,6 +79,9 @@
     background-color: $white
     padding: 16px
     border-radius: 0 0 10px 10px
+    position: absolute
+    left: 0
+    right: 0
 
   &__menu
     list-style: none
@@ -97,9 +103,8 @@
   &__frontend
     cursor: pointer
 
-  &__backend:checked + .dropper__frontend
-    font-weight: 600
-
     &:hover
       font-weight: 600
-      cursor: pointer
+
+  &__backend:checked + .dropper__frontend
+    font-weight: 600
