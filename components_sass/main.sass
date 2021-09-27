@@ -16,18 +16,28 @@ $opacitybg: rgba(0, 78, 12, 0.5)
 
 $accent: #06D10E
 
+$media-md: 700px
+$media-lg: 1555px
+
 :root
   font-family: 'Gilroy', sans-serif
   box-sizing: border-box
 
+html
+  height: 100%
+
 body
   margin: 0
+  height: 100%
 
 h1, h2, h3, h4, h5, h6, p
   margin: 0
 
 a
   text-decoration: none
+
+.none
+  display: none!important
 
 @import ./mainpage/mainpage
 @import ./button/button
@@ -38,3 +48,6 @@ a
 @import ./input/input
 @import ./header/header
 @import ./opacitybg/opacitybg
+@import ./category/category
+@import ./page/page
+@import ./slider/slider

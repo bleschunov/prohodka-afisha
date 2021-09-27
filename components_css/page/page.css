@@ -1,0 +1,12 @@
+.page__box {
+  padding: 0 30px;
+}
+@media screen and (min-width: 700px) {
+  .page__box {
+    max-width: 1560px;
+    margin: 0 auto;
+    padding: 0 60px;
+  }
+}
+
+/*# sourceMappingURL=page.css.map */

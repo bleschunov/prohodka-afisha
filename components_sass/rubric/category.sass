@@ -1,0 +1,36 @@
+.category
+  &__header
+    display: flex
+    margin-bottom: 20px
+
+  &__name
+    display: grid
+    place-items: center
+    height: 36px
+    width: 130px
+    background: $white
+    color: $black-1
+    font-size: 14px
+    border-radius: 5px
+
+  &__toggler
+    display: flex
+    justify-content: center
+    height: 36px
+    width: 204px
+    align-items: center
+    background-color: $black-5
+    color: $white
+    font-size: 12px
+    cursor: pointer
+
+  &__arrow
+    width: 12px
+    height: 12px
+    color: $white
+
+  &__table
+    display: grid
+    gap: 20px
+    background: $white
+    grid-template-columns: repeat(auto-fit, $cardWidthLarge)

@@ -1,3 +1,6 @@
+$cardWidthSmall: 206px
+$cardWidthLarge: 295px
+
 @keyframes like
   from
     transform: scale(1)
@@ -10,6 +13,7 @@
   background: center / cover no-repeat
   border-radius: 10px
   display: inline-block
+  flex-shrink: 0
 
   &__wrapper
     display: flex
@@ -93,7 +97,7 @@
       color: $red
 
   &_vertical
-    width: 206px
+    width: $cardWidthSmall
     height: 265px
 
     & .card__wrapper
@@ -101,6 +105,10 @@
 
     & .card__blur
       border-radius: 0 0 10px 10px
+
+    @media screen and (min-width: 700px)
+      width: $cardWidthLarge
+      height: 380px
 
   &_horizontal
     width: 252px

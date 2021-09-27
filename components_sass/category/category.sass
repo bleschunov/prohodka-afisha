@@ -1,0 +1,51 @@
+.category
+  &__header
+
+  &__flex-box
+    display: flex
+
+  &__name
+    display: grid
+    place-items: center
+    height: 36px
+    width: 130px
+    background: $white
+    color: $black-1
+    font-size: 14px
+    border-radius: 5px
+
+  &__toggler
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 36px
+    width: 204px
+    color: $white
+    font-size: 12px
+    cursor: pointer
+
+    &_active
+      background-color: $accent
+
+    &_inactive
+      background-color: $black-5
+
+  &__arrow
+    width: 12px
+    height: 12px
+    color: $white
+
+  &__table
+    background: $white
+    padding: 20px 0
+    border-top: 1px solid $accent
+
+  &__grid-box
+    display: grid
+    gap: 20px
+    justify-content: center
+    justify-items: center
+    grid-template-columns: repeat(auto-fit, $cardWidthLarge)
+
+  &__slider
+    margin-top: 20px

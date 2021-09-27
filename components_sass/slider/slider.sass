@@ -1,0 +1,56 @@
+.slider
+  position: relative
+  overflow-x: scroll
+
+  &__flex-box
+    display: flex
+    gap: 20px
+
+  @media screen and (min-width: $media-md)
+    overflow-x: hidden
+
+  &__button
+    display: none
+
+    @media screen and (min-width: $media-md)
+      display: block
+      opacity: 0.2
+      z-index: 1
+      cursor: pointer
+      background-color: $bg-blur-white
+      width: 52px
+      position: absolute
+      display: grid
+      place-items: center
+      top: 0
+      bottom: 0
+      transition: opacity 200ms ease
+
+      &_left
+        left: 0
+
+        &:hover
+          opacity: 1
+
+      &_right
+        right: 0
+
+        &:hover
+          opacity: 1
+
+    @media screen and (min-width: $media-lg)
+      display: none
+
+  &__icon
+    width: 50px
+    height: 16px
+    color: $white
+
+    &_left
+      transform: rotate(90deg)
+
+    &_right
+      transform: rotate(-90deg)
+
+  &__item
+    transition: transform 200ms ease
