@@ -10,6 +10,9 @@ function Card (name, photo, category, address, date, time, link, is_liked, card_
   if (card_type == 'vertical') {
     card.classList.add('card_vertical');
   }
+  else if (card_type == 'horizontal') {
+    card.classList.add('card_horizontal');
+  }
   cardName.textContent = name;
   cardAddress.textContent = cardAddress;
   cardDate.textContent = date + ' ' + time
@@ -22,7 +25,7 @@ function Card (name, photo, category, address, date, time, link, is_liked, card_
 
 let cardTemplate = document.createElement('template');
 cardTemplate.innerHTML = `
-  <a class="card card_vertical">
+  <a class="card">
     <div class="card__wrapper">
       <div class="card__header">
         <div class="card__repost-wrapper">

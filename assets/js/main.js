@@ -202,7 +202,7 @@ function updateCategories (events) {
     for (category of categoryList) {
       if (e.category_id == category.id) {
         let card = new Card(e.name, e.photo, e.category,
-          e.address, e.date, e.time, e.link, e.is_liked, e.card_type);
+          e.address, e.date, e.time, e.link, e.is_liked, 'vertical');
         category.addEvent(card);
         if (category.slider.items.length < 5) {
           category.slider.addItem(card.cloneNode(true));

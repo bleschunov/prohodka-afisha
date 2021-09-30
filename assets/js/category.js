@@ -8,7 +8,7 @@ categoryTemplate.innerHTML = `
           <div class="category__toggler category__toggler_inactive">
             Посмотреть полностью
             <svg class="category__arrow">
-              <use xlink:href="../../assets/svg_sprite.svg#arrow_down"></use>
+              <use xlink:href="./assets/svg_sprite.svg#arrow_down"></use>
             </svg>
           </div>
         </div>
