@@ -13,6 +13,8 @@
     color: $black-1
     font-size: 14px
     border-radius: 5px
+    margin-right: -3px
+    position: relative
 
   &__toggler
     display: flex
@@ -23,6 +25,7 @@
     color: $white
     font-size: 12px
     cursor: pointer
+    border-radius: 0 5px 5px 0
 
     &_active
       background-color: $accent
@@ -45,7 +48,10 @@
     gap: 20px
     justify-content: center
     justify-items: center
-    grid-template-columns: repeat(auto-fit, $cardWidthLarge)
+    grid-template-columns: repeat(auto-fit, $cardWidthSmall)
+
+    @media screen and (min-width: $media-md)
+      grid-template-columns: repeat(auto-fit, $cardWidthLarge)
 
   &__slider
     margin-top: 20px

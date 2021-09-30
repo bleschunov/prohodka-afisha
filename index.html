@@ -6,11 +6,151 @@
     <title>Mainpage</title>
   </head>
   <body>
-    <a href="./components_sass/card/card.html">Карточки</a>
-    <a href="./components_sass/header/header.html">Шапка</a>
-    <a href="./components_sass/category/category.html">Категория</a>
+    <header class="header page__header">
+      <div class="header__top">
+        <div class="header__left">
+          <svg class="header__logo">
+            <use xlink:href="../../assets/svg_sprite.svg#logo"></use>
+          </svg>
+          <div class="header__input-wrapper header__input-wrapper_top">
+            <div class="input">
+              <input class="input__backend" type="text" placeholder="Поиск" />
+              <svg class="input__search">
+                <use xlink:href="../../assets/svg_sprite.svg#search"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="header__right">
+          <div class="header__dropper-wrapper">
+            <details class="dropper dropper_light" id="cityDropper">
+                <summary class="dropper__toggler header__toggler">
+                  <div class="dropper__toggler-left">
+                    <svg class="dropper__location">
+                      <use xlink:href="../../assets/svg_sprite.svg#location"></use>
+                    </svg>
+                    <span class="dropper__city" id="currentCity"></span>
+                  </div>
+                  <div class="dropper__arrow-wrapper">
+                    <svg class="dropper__arrow">
+                      <use xlink:href="../../assets/svg_sprite.svg#arrow_down"></use>
+                    </svg>
+                  </div>
+                </summary>
+                <div class="dropper__window header__window">
+                    <ul class="dropper__menu" id="cityMenu">
+                      <template id="item">
+                        <li class="dropper__item">
+                          <label>
+                            <input class="dropper__backend" type="radio" name="city_menu" />
+                            <div class="dropper__frontend">Москва</div>
+                          </label>
+                        </li>
+                      </template>
+                    </ul>
+                </div>
+                <div class="opacitybg dropper__opacitybg"></div>
+            </details>
+          </div>
+          <div class="header__icons header__icons_top">
+            <svg class="header__cart">
+              <use xlink:href="../../assets/svg_sprite.svg#cart"></use>
+            </svg>
+            <svg class="header__person">
+              <use xlink:href="../../assets/svg_sprite.svg#person"></use>
+            </svg>
+          </div>
+        </div>
+        </div>
+      <div class="header__bottom">
+        <div class="header__input-wrapper">
+          <div class="input">
+            <input class="input__backend" type="text" placeholder="Поиск" />
+            <svg class="input__search">
+              <use xlink:href="../../assets/svg_sprite.svg#search"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="header__icons">
+          <svg class="header__cart">
+            <use xlink:href="../../assets/svg_sprite.svg#cart"></use>
+          </svg>
+          <svg class="header__person">
+            <use xlink:href="../../assets/svg_sprite.svg#person"></use>
+          </svg>
+        </div>
+      </div>
+    </header>
+    <main class="page__main">
+      <div class="page__category-box">
+
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="page__box">
+        <div class="footer__flex-box">
+          <ul class="footer__info">
+            <p class="footer__contacts-info">
+              Контакты<br /><br /><br />
+              <a class="footer__link footer__tel" href="tel:+7-777-777-77-77">+7-777-777-77-77</a><br /><br />
+              <a class="footer__link footer__mail" href="mailto:mail@mail.com">mail@mail.com</a>
+            </p>
+            <div class="footer__socials">
+              <li class="footer__social-item">
+                <a href="#">
+                  <svg class="footer__social">
+                    <use xlink:href="../../assets/svg_sprite.svg#vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#">
+                  <svg class="footer__social">
+                    <use xlink:href="../../assets/svg_sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#">
+                  <svg class="footer__social">
+                    <use xlink:href="../../assets/svg_sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+            </div>
+          </ul>
+          <nav class="footer__nav-wrapper">
+            <ul class="footer__nav">
+              <div class="footer__nav-column">
+                <li class="footer__link-item"><a class="footer__link" href="#">Политика конфидециальности</a></li>
+                <li class="footer__link-item"><a class="footer__link" href="#">Главная</a></li>
+                <li class="footer__link-item"><a class="footer__link" href="#">Преимущества</a></li>
+                <li class="footer__link-item"><a class="footer__link" href="#">Спонсоры</a></li>
+              </div>
+              <div class="footer__nav-column">
+                <li class="footer__link-item"><a class="footer__link" href="#">Покупателям</a></li>
+                <li class="footer__link-item"><a class="footer__link" href="#">Организаторам</a></li>
+                <li class="footer__link-item"><a class="footer__link" href="#">Контакты</a></li>
+                <li class="footer__link-item"><a class="footer__link" href="#">Тарифы</a></li>
+              </div>
+            </ul>
+          </nav>
+          <svg class="footer__logo">
+            <use xlink:href="../../assets/svg_sprite.svg#logo"></use>
+          </svg>
+          <p class="footer__info footer__address-info">
+            Адрес<br /><br /><br />
+            г. Рязань<br />
+            ул. Касимовское шоссе
+          </p>
+        </div>
+      </div>
+    </footer>
 
     <script src="./assets/js/cities.js"></script>
-    <script src="./assets/js/category.js"></script>
+    <script src="../../assets/js/card.js"></script>
+    <script src="../../assets/js/slider.js"></script>
+    <script src="../../assets/js/category.js"></script>
+    <script src="../../assets/js/main.js"></script>
   </body>
 </html>

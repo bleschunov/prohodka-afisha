@@ -1,0 +1,91 @@
+.footer
+  background-color: $black-2
+  padding: 54px 0 83px
+  color: $white
+  font-size: 12px
+
+  @media screen and (min-width: $media-md)
+    padding: 65px 0 150px
+    font-size: 18px
+
+  &__flex-box
+    display: flex
+    gap: 20px
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+
+    @media screen and (min-width: $media-md)
+      flex-direction: row
+      align-items: flex-start
+      justify-content: center
+
+  &__info
+    display: flex
+    flex-direction: column
+    gap: 20px
+    margin-bottom: 115px
+
+    @media screen and (min-width: $media-md)
+      order: 2
+      flex-grow: 1
+
+  &__contacts-info
+    display: none
+
+    @media screen and (min-width: $media-md)
+      display: block
+
+  &__address-info
+    display: none
+
+    @media screen and (min-width: $media-md)
+      display: block
+
+  &__socials
+    display: flex
+    gap: 20px
+
+  &__social
+    color: $accent
+    width: 25px
+    height: 25px
+
+
+  &__nav-wrapper
+    margin-bottom: 110px
+
+    @media screen and (min-width: $media-md)
+      order: 0
+      flex-grow: 1
+
+  &__nav
+    display: flex
+    gap: 20px
+
+
+    @media screen and (min-width: $media-md)
+      column-gap: 20px
+
+
+  &__link-item
+    margin-bottom: 25px
+
+    &:nth-child(4n)
+      margin-bottom: 0
+
+  &__link
+    color: $white
+
+    &:hover
+      color: $accent
+
+  &__logo
+    color: $accent
+    width: 55px
+    height: 51px
+    transform: scale(1.5)
+    flex-shrink: 0
+
+    @media screen and (min-width: $media-md)
+      order: 1
