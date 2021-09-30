@@ -27,7 +27,7 @@ cardTemplate.innerHTML = `
       <div class="card__header">
         <div class="card__repost-wrapper">
           <svg class="card__repost">
-            <use xlink:href="../../assets/svg_sprite.svg#repost"></use>
+            <use xlink:href="./assets/svg_sprite.svg#repost"></use>
           </svg>
         </div>
       </div>
@@ -46,10 +46,10 @@ cardTemplate.innerHTML = `
             <label class="card__like">
               <input class="card__backend" type="checkbox"/>
               <svg class="card__frontend card__frontend_checked">
-                <use xlink:href="../../assets/svg_sprite.svg#like_checked"></use>
+                <use xlink:href="./assets/svg_sprite.svg#like_checked"></use>
               </svg>
               <svg class="card__frontend card__frontend_unchecked">
-                <use xlink:href="../../assets/svg_sprite.svg#like_unchecked"></use>
+                <use xlink:href="./assets/svg_sprite.svg#like_unchecked"></use>
               </svg>
             </label>
         </div>
