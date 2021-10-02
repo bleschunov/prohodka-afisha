@@ -258,6 +258,29 @@ ul {
 .card_horizontal .card__blur {
   border-radius: 10px 0 0 10px;
 }
+.card_large {
+  height: 365px;
+  max-width: 770px;
+  width: 100%;
+}
+.card_large .card__repost-wrapper {
+  display: none;
+}
+.card_large .card__blur {
+  -webkit-backdrop-filter: none;
+          backdrop-filter: none;
+}
+.card_large .card__title {
+  font-size: 20px;
+}
+.card_large .card__info {
+  font-size: 14px;
+}
+@media screen and (min-width: 700px) {
+  .card_large .card__blur {
+    display: none;
+  }
+}
 
 .dropper_light .dropper__toggler {
   background-color: #333333;
@@ -294,6 +317,7 @@ ul {
 }
 .dropper[open] .dropper__opacitybg {
   display: block;
+  z-index: 99;
 }
 .dropper__toggler {
   cursor: pointer;
@@ -307,6 +331,7 @@ ul {
   font-size: 16px;
   font-weight: 400;
   border-radius: 10px;
+  z-index: 100;
 }
 .dropper__toggler::-webkit-details-marker {
   display: none;
@@ -350,6 +375,7 @@ ul {
   position: absolute;
   left: 0;
   right: 0;
+  z-index: 100;
 }
 .dropper__menu {
   list-style: none;
@@ -453,11 +479,7 @@ ul {
   position: relative;
 }
 .header__toggler {
-  z-index: 2;
   position: relative;
-}
-.header__window {
-  z-index: 2;
 }
 .header__bottom {
   display: -webkit-box;
@@ -656,6 +678,11 @@ ul {
   position: relative;
   overflow-x: scroll;
 }
+@media screen and (min-width: 700px) {
+  .slider {
+    overflow-x: hidden;
+  }
+}
 .slider::-webkit-scrollbar {
   width: 0;
 }
@@ -670,10 +697,8 @@ ul {
   transition: transform 200ms ease;
   transition: transform 200ms ease, -webkit-transform 200ms ease;
 }
-@media screen and (min-width: 700px) {
-  .slider {
-    overflow-x: hidden;
-  }
+.slider__tag {
+  display: none;
 }
 .slider__button {
   display: none;
@@ -728,6 +753,19 @@ ul {
       -ms-transform: rotate(-90deg);
           transform: rotate(-90deg);
 }
+.slider_extended .slider__tag {
+  display: block;
+  background-color: #FFFFFF;
+  color: #000000;
+  border-radius: 5px;
+  display: block;
+  position: absolute;
+  left: 100px;
+  top: 50px;
+  padding: 10px 24px;
+  z-index: 1;
+}
+
 .footer {
   background-color: #151515;
   padding: 54px 0 83px;

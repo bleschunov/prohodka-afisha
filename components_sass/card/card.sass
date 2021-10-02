@@ -119,3 +119,25 @@ $cardWidthLarge: 295px
 
     & .card__blur
       border-radius: 10px 0 0 10px
+
+  &_large
+    height: 365px
+    max-width: 770px
+    width: 100%
+
+    & .card
+      &__repost-wrapper
+        display: none
+
+      &__blur
+        backdrop-filter: none
+
+      &__title
+        font-size: 20px
+
+      &__info
+        font-size: 14px
+
+      @media screen and (min-width: $media-md)
+        &__blur
+          display: none

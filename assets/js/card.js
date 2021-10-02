@@ -1,4 +1,4 @@
-function Card (e, card_type) {
+function Card (e, cardType='vertical', isLarge=false) {
   // console.log(e);
   this.card = cardTemplate.content.cloneNode(true).querySelector('.card');
   this.cardName = this.card.querySelector('.card__title');
@@ -8,11 +8,14 @@ function Card (e, card_type) {
 
   this.card.setAttribute('href', e.link);
   this.card.style.backgroundImage = `url('${e.photo}')`;
-  if (card_type == 'vertical') {
+  if (cardType == 'vertical') {
     this.card.classList.add('card_vertical');
   }
-  else if (card_type == 'horizontal') {
+  else if (cardType == 'horizontal') {
     this.card.classList.add('card_horizontal');
+  }
+  if (isLarge) {
+    this.card.classList.add('card_large')
   }
   this.cardName.textContent = e.name;
   this.cardAddress.textContent = e.address;
