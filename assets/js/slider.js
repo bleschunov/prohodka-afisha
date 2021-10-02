@@ -1,18 +1,19 @@
 let sliderTemplate = document.createElement('template');
 sliderTemplate.innerHTML = `
     <div class="slider category__slider">
+      <div class="slider__button slider__button_left">
+        <svg class="slider__icon slider__icon_left">
+          <use xlink:href="./assets/svg_sprite.svg#arrow_down_bold"></use>
+        </svg>
+      </div>
+      <div class="slider__button slider__button_right">
+        <svg class="slider__icon slider__icon_right">
+          <use xlink:href="./assets/svg_sprite.svg#arrow_down_bold"></use>
+        </svg>
+      </div>
       <div class="page__box">
         <div class="slider__flex-box">
-          <div class="slider__button slider__button_left">
-            <svg class="slider__icon slider__icon_left">
-              <use xlink:href="../../assets/svg_sprite.svg#arrow_down_bold"></use>
-            </svg>
-          </div>
-          <div class="slider__button slider__button_right">
-            <svg class="slider__icon slider__icon_right">
-              <use xlink:href="../../assets/svg_sprite.svg#arrow_down_bold"></use>
-            </svg>
-          </div>
+
           <!-- ...
           Content
           ... -->
@@ -23,60 +24,52 @@ sliderTemplate.innerHTML = `
 
 let pagePadding = 60
 
-function Slider () {
-  // console.log(sliderTemplate.content.cloneNode(true));
+function Slider (items) {
   this.slider = sliderTemplate.content.cloneNode(true).querySelector('.slider');
+  this.flexBox = this.slider.querySelector('.slider__flex-box');
   this.btnLeft = this.slider.querySelector('.slider__button_left');
   this.btnRight = this.slider.querySelector('.slider__button_right');
-  this.items = [];
+
+  this.items = items;
+  this.step = 325;
   this.x = 0
-
-  let render = () => {
-    for (item of this.items) {
-      item.style.transform = `translateX(${this.x}px)`
-    }
-  }
-
-  let check = () => {
-    if (this.x > 0) {
-      console.log(1);
-      console.log(this.x);
-      this.x = 0
-    }
-    else if (this.x < document.body.clientWidth - this.slider.scrollWidth - pagePadding) {
-      console.log(2);
-      console.log(this.x);
-      console.log(this.slider.scrollWidth);
-      this.x = document.body.clientWidth - this.slider.scrollWidth - pagePadding;
-    }
-  }
-
-  let moveLeft = () => {
-    this.x += this.items[0].clientWidth + +getComputedStyle(this.slider.querySelector('.slider__flex-box')).gap.match(/\d+/g)[0];
-    check();
-    render();
-  }
-
-  let moveRight = () => {
-    this.x -= this.items[0].clientWidth + +getComputedStyle(this.slider.querySelector('.slider__flex-box')).gap.match(/\d+/);
-    check();
-    render();
-  }
 
   this.getNode = () => {
     return this.slider;
   }
 
-  this.drop = () => {
-    this.items = [];
-  }
-
-  this.display = () => {
+  // Заполняет DOM элементами
+  let display = () => {
     for (item of this.items) {
       item.classList.add('slider__item');
-      this.btnRight.after(item);
+      this.flexBox.append(item);
     }
-    return this.items;
+  }
+
+  // Функции для работы слайдера
+  let render = () => {
+    this.slider.querySelector('.slider__flex-box').style.transform = `translateX(${this.x}px)`
+  }
+
+  let check = () => {
+    if (this.x > 0) {
+      this.x = 0
+    }
+    else if (this.x < document.body.clientWidth - this.flexBox.scrollWidth - 2 * pagePadding) {
+      this.x = document.body.clientWidth - this.flexBox.scrollWidth - 2 * pagePadding;
+    }
+  }
+
+  let moveLeft = () => {
+    this.x += this.step;
+    check();
+    render();
+  }
+
+  let moveRight = () => {
+    this.x -= this.step;
+    check();
+    render();
   }
 
   this.btnLeft.addEventListener('click', moveLeft);
@@ -87,11 +80,5 @@ function Slider () {
     render();
   });
 
-  this.getNode = () => {
-    return this.slider;
-  }
-
-  this.addItem = item => {
-    this.items.push(item);
-  }
+  display();
 }

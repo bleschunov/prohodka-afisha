@@ -664,6 +664,11 @@ ul {
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
+  -webkit-transition: -webkit-transform 200ms ease;
+  transition: -webkit-transform 200ms ease;
+  -o-transition: transform 200ms ease;
+  transition: transform 200ms ease;
+  transition: transform 200ms ease, -webkit-transform 200ms ease;
 }
 @media screen and (min-width: 700px) {
   .slider {
@@ -723,14 +728,6 @@ ul {
       -ms-transform: rotate(-90deg);
           transform: rotate(-90deg);
 }
-.slider__item {
-  -webkit-transition: -webkit-transform 200ms ease;
-  transition: -webkit-transform 200ms ease;
-  -o-transition: transform 200ms ease;
-  transition: transform 200ms ease;
-  transition: transform 200ms ease, -webkit-transform 200ms ease;
-}
-
 .footer {
   background-color: #151515;
   padding: 54px 0 83px;
@@ -876,4 +873,5 @@ ul {
             order: 1;
   }
 }
+
 /*# sourceMappingURL=main.css.map */

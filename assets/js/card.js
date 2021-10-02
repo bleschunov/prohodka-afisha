@@ -1,26 +1,29 @@
-function Card (name, photo, category, address, date, time, link, is_liked, card_type) {
-  let card = cardTemplate.content.cloneNode(true).querySelector('.card');
-  let cardName = card.querySelector('.card__title');
-  let cardAddress = card.querySelector('.card__location');
-  let cardDate = card.querySelector('.card__date');
-  let cardBackend = card.querySelector('.card__backend');
+function Card (e, card_type) {
+  // console.log(e);
+  this.card = cardTemplate.content.cloneNode(true).querySelector('.card');
+  this.cardName = this.card.querySelector('.card__title');
+  this.cardAddress = this.card.querySelector('.card__location');
+  this.cardDate = this.card.querySelector('.card__date');
+  this.cardBackend = this.card.querySelector('.card__backend');
 
-  card.setAttribute('href', link);
-  card.style.backgroundImage = `url('${photo}')`;
+  this.card.setAttribute('href', e.link);
+  this.card.style.backgroundImage = `url('${e.photo}')`;
   if (card_type == 'vertical') {
-    card.classList.add('card_vertical');
+    this.card.classList.add('card_vertical');
   }
   else if (card_type == 'horizontal') {
-    card.classList.add('card_horizontal');
+    this.card.classList.add('card_horizontal');
   }
-  cardName.textContent = name;
-  cardAddress.textContent = cardAddress;
-  cardDate.textContent = date + ' ' + time
-  if (is_liked) {
-    cardBackend.setAttribute('checked', '');
+  this.cardName.textContent = e.name;
+  this.cardAddress.textContent = e.address;
+  this.cardDate.textContent = e.date + ' ' + e.time
+  if (e.is_liked) {
+    this.cardBackend.setAttribute('checked', '');
   }
 
-  return card;
+  this.getNode = () => {
+    return this.card;
+  }
 }
 
 let cardTemplate = document.createElement('template');
