@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../components_css/main.css" />
+    <title>Modal</title>
+  </head>
+  <body style="background: grey">
+    <div class="modal page__modal">
+      <div class="modal__header">
+        <div class="modal__title">Поделиться</div>
+        <svg class="modal__cross">
+          <use xlink:href="../../assets/svg_sprite.svg#cross"></use>
+        </svg>
+      </div>
+      <ul class="modal__socials">
+        <li class="modal__social-item">
+          <a href="#">
+            <svg class="modal__social">
+              <use xlink:href="../../assets/svg_sprite.svg#vk"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="modal__social-item">
+          <a href="#">
+            <svg class="modal__social">
+              <use xlink:href="../../assets/svg_sprite.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="modal__social-item">
+          <a href="#">
+            <svg class="modal__social">
+              <use xlink:href="../../assets/svg_sprite.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <label class="modal__href modal__event">
+        <div class="modal__info">Ссылка мероприятия</div>
+        <div class="modal__backend">
+          <input class="modal__input" type="text" />
+          <div class="modal__copy-wrapper">
+            <svg class="modal__copy">
+              <use xlink:href="../../assets/svg_sprite.svg#copy"></use>
+            </svg>
+          </div>
+        </div>
+      </label>
+      <label class="modal__href modal__event-page">
+        <div class="modal__info">Ссылка страницы мероприятия</div>
+        <div class="modal__backend">
+          <input class="modal__input" type="text" />
+          <div class="modal__copy-wrapper">
+            <svg class="modal__copy">
+              <use xlink:href="../../assets/svg_sprite.svg#copy"></use>
+            </svg>
+          </div>
+        </div>
+      </label>
+    </div>
+  </body>
+</html>

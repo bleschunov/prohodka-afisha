@@ -1,4 +1,5 @@
 $pagePadding: 60px
+$pagePaddingMobile: 22px
 
 .page
   display: flex
@@ -6,12 +7,22 @@ $pagePadding: 60px
   justify-content: space-between
 
   &__box
-    padding: 0 calc($pagePadding / 2)
+    padding: 0 $pagePaddingMobile
 
     @media screen and (min-width: $media-md)
       max-width: 1560px
       margin: 0 auto
       padding: 0 $pagePadding
+
+  &__header
+    margin-bottom: 0
+
+    @media screen and (min-width: $media-md)
+      margin-bottom: 50px
+
+
+  &__carousel
+
 
   &__main
     background-color: $grey-1
@@ -30,3 +41,15 @@ $pagePadding: 60px
 
     @media screen and (min-width: $media-md)
       margin-bottom: 100px
+
+  &__modal
+    position: fixed
+    z-index: 100
+    left: 0
+    right: 0
+    bottom: 0
+
+    @media screen and (min-width: $media-md)
+      left: 50%
+      top: 50%
+      transform: translate(-50%, -50%)

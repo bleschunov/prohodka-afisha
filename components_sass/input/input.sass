@@ -3,6 +3,9 @@
   justify-content: space-between
   position: relative
 
+  &:focus-within .input__dropdown
+    display: flex
+
   &__backend
     border: none
     border: 1px solid $grey-3
@@ -10,12 +13,17 @@
     border-radius: 10px
     background-color: $white
     width: 100%
+    z-index: 5
 
     &:focus
       outline: none
       border: 1px solid $accent
 
+    @media screen and (min-width: $media-md)
+      padding: 20px
+
   &__search
+    z-index: 3
     color: $black-3
     width: 22px
     height: 21px
@@ -26,3 +34,28 @@
 
     &:hover
       color: $accent
+
+    @media screen and (min-width: $media-md)
+      top: 18px
+
+  &__dropdown
+    display: none
+    flex-direction: column
+    background: $bg-search-window
+    backdrop-filter: blur(10px)
+    position: absolute
+    z-index: 4
+    left: 0
+    right: 0
+    border-radius: 10px
+
+    &_top
+      gap: 20px
+      top: 79px
+      padding: 30px 15px 40px
+      min-width: 469px
+
+    &_bottom
+      gap: 30px
+      top: 0
+      padding: 71px 15px 30px

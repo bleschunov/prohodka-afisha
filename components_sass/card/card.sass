@@ -14,6 +14,23 @@ $cardWidthLarge: 295px
   border-radius: 10px
   display: inline-block
   flex-shrink: 0
+  position: relative
+
+  &:hover .card__buy
+    display: block
+
+  &__buy
+    display: none
+    color: $white
+    font-size: 18px
+    padding: 15px 58px
+    background-color: $accent
+    border-radius: 5px
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    cursor: pointer
 
   &__wrapper
     display: flex
@@ -27,10 +44,14 @@ $cardWidthLarge: 295px
     position: relative
     padding: 15px
 
+  &__image
+    display: none
+
   &__repost-wrapper
     padding: 4px 7px
     border: $white solid 1px
     border-radius: 5px
+    cursor: pointer
 
     &:hover, &:hover *
       border-color: $accent
@@ -40,13 +61,13 @@ $cardWidthLarge: 295px
     width: 13px
     height: 11px
     color: $white
-    cursor: pointer
 
 
   &__blur
     background: $bg-blur-white
     backdrop-filter: blur(6px)
     padding: 16px 20px
+    flex-grow: 0
 
   &__title
     font-size: 18px
@@ -124,6 +145,7 @@ $cardWidthLarge: 295px
     height: 365px
     max-width: 770px
     width: 100%
+    border-radius: 0
 
     & .card
       &__repost-wrapper
@@ -131,6 +153,8 @@ $cardWidthLarge: 295px
 
       &__blur
         backdrop-filter: none
+        padding-bottom: 36px
+        background: $bg-large-card-gradient center/cover no-repeat
 
       &__title
         font-size: 20px
@@ -141,3 +165,36 @@ $cardWidthLarge: 295px
       @media screen and (min-width: $media-md)
         &__blur
           display: none
+
+    @media screen and (min-width: $media-md)
+      border-radius: 10px
+
+  &_search
+    display: flex
+    height: 150px
+
+    & .card
+      &__header
+        display: none
+
+      &__image
+        display: block
+        height: 100%
+        width: 100%
+        background: top center/cover no-repeat
+
+      &__title
+        font-size: 18px
+        color: $black-1
+
+      &__info
+        font-size: 12px
+        color: $black-1
+
+      &__blur
+        backdrop-filter: none
+        background: transparent
+        flex-grow: 1
+
+      &__frontend
+        color: $black-1

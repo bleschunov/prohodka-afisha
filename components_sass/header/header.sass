@@ -1,10 +1,14 @@
 .header
-  background: $black-2
+
+  &__flex-box
+    display: flex
 
   &__top
-    display: flex
-    padding: 28px 22px 28px
-    gap: 60px
+    padding: 28px 0 28px
+    background: $black-2
+
+  &__flex-box_top
+    gap: 35px
 
   &__left
     display: flex
@@ -14,6 +18,8 @@
 
   &__right
     display: flex
+    justify-content: flex-end
+    flex-grow: 1
     align-items: center
     gap: 20px
 
@@ -21,42 +27,51 @@
     color: $accent
     width: 55px
     height: 51px
+    flex-shrink: 0
 
   &__dropper-wrapper
-    width: 237px
     position: relative
+    max-width: 243px
+    flex-grow: 1
 
   &__toggler
     position: relative
 
   &__window
-    
+
 
   &__bottom
-    display: flex
-    padding: 28px 22px 28px
-    align-items: center
-    justify-content: space-between
+    padding: 28px 0 28px
     background-color: $grey-1
-    gap: 30px
 
     @media screen and (min-width: 700px)
       display: none
 
+  &__flex-box_bottom
+    align-items: center
+    justify-content: space-between
+    gap: 30px
+
   &__input-wrapper
     flex-grow: 1
+    max-width: 509px
 
     &_top
       display: none
+
       @media screen and (min-width: 700px)
         display: block
+
+    &_bottom:focus-within ~ .header__icons_bottom
+      display: none
 
   &__icons
     &_top
       display: none
 
       @media screen and (min-width: 700px)
-        display: block
+        display: flex
+        flex-wrap: nowrap
 
   &__cart
     width: 35px

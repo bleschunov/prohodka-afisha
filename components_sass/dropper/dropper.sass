@@ -1,4 +1,6 @@
 .dropper
+  flex-grow: 1
+
   &_light
     & .dropper
       &__toggler
@@ -40,15 +42,18 @@
       display: block
       z-index: 99
 
+    & .dropper__toggler
+      z-index: 100
+
   &__toggler
     cursor: pointer
     display: flex
+    gap: 20px
     justify-content: space-between
     padding: 17px 15px
     font-size: 16px
     font-weight: 400
     border-radius: 10px
-    z-index: 100
 
     &::-webkit-details-marker
       display: none
