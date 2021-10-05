@@ -31,6 +31,7 @@ $cardWidthLarge: 295px
     top: 50%
     transform: translate(-50%, -50%)
     cursor: pointer
+    z-index: 1
 
   &__wrapper
     display: flex
@@ -48,10 +49,13 @@ $cardWidthLarge: 295px
     display: none
 
   &__repost-wrapper
-    padding: 4px 7px
     border: $white solid 1px
     border-radius: 5px
     cursor: pointer
+    width: 31px
+    height: 31px
+    display: grid
+    place-items: center
 
     &:hover, &:hover *
       border-color: $accent
@@ -61,7 +65,6 @@ $cardWidthLarge: 295px
     width: 13px
     height: 11px
     color: $white
-
 
   &__blur
     background: $bg-blur-white
@@ -81,6 +84,9 @@ $cardWidthLarge: 295px
     line-height: 18px
     color: $white
     margin-bottom: 15px
+
+  &__date
+    margin-bottom: 0
 
   &__footer
     position: relative
@@ -127,7 +133,7 @@ $cardWidthLarge: 295px
     & .card__blur
       border-radius: 0 0 10px 10px
 
-    @media screen and (min-width: 700px)
+    @media screen and (min-width: $media-md)
       width: $cardWidthLarge
       height: 380px
 
@@ -135,11 +141,44 @@ $cardWidthLarge: 295px
     width: 252px
     height: 145px
 
+    @media screen and (min-width: $media-md)
+      width: 375px
+      height: 177px
+
     & .card__wrapper
       flex-direction: row-reverse
 
     & .card__blur
       border-radius: 10px 0 0 10px
+
+  &_medium
+    height: 300px
+    max-width: 507px
+    width: 100%
+    border-radius: 0
+
+    & .card
+      &__repost-wrapper
+        display: none
+
+      &__blur
+        backdrop-filter: none
+        padding-bottom: 36px
+        background: $bg-large-card-gradient center/cover no-repeat
+
+      &__title
+        font-size: 20px
+
+      &__info
+        font-size: 14px
+
+      @media screen and (min-width: $media-md)
+        &__blur
+          display: none
+
+    @media screen and (min-width: $media-md)
+      border-radius: 10px
+
 
   &_large
     height: 365px

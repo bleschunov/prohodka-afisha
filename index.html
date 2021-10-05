@@ -28,34 +28,7 @@
             </div>
             <div class="header__right">
               <div class="header__dropper-wrapper">
-                <details class="dropper dropper_light" id="cityDropper">
-                    <summary class="dropper__toggler header__toggler">
-                      <div class="dropper__toggler-left">
-                        <svg class="dropper__location">
-                          <use xlink:href="./assets/svg_sprite.svg#location"></use>
-                        </svg>
-                        <span class="dropper__city" id="currentCity"></span>
-                      </div>
-                      <div class="dropper__arrow-wrapper">
-                        <svg class="dropper__arrow">
-                          <use xlink:href="./assets/svg_sprite.svg#arrow_down"></use>
-                        </svg>
-                      </div>
-                    </summary>
-                    <div class="dropper__window header__window">
-                        <ul class="dropper__menu" id="cityMenu">
-                          <template id="item">
-                            <li class="dropper__item">
-                              <label>
-                                <input class="dropper__backend" type="radio" name="city_menu" />
-                                <div class="dropper__frontend">Москва</div>
-                              </label>
-                            </li>
-                          </template>
-                        </ul>
-                    </div>
-                    <div class="opacitybg dropper__opacitybg"></div>
-                </details>
+                <!-- Dropper -->
               </div>
               <div class="header__icons header__icons_top">
                 <svg class="header__cart">
@@ -96,8 +69,180 @@
       </div>
     </header>
     <main class="page__main">
+      <div class="page__box" id="recommendations">
+        <div class="page__title page__title_small">Рекомендации</div>
+      </div>
+      <!-- Cards -->
+      <div class="filters page__filters">
+        <div class="page__box">
+          <div class="filters__title">Фильтры</div>
+          <div class="filters__flex-box">
+            <!-- Droppers -->
+            <button class="filters__button">Найти</button>
+          </div>
+        </div>
+      </div>
+      <div class="page__box" id="topTen">
+        <div class="page__title page__title_small page__top-ten-title">Топ-10</div>
+      </div>
+      <!-- Cards -->
       <div class="page__category-box">
+        <!-- Categories with cards and sliders -->
+      </div>
+      <div class="page__add-event-box">
+        <button class="page__add-event-button">Добавить свое мероприятие</button>
+      </div>
+      <div class="page__gives">
+        <div class="page__box">
+          <div class="category category_light page__category">
+            <div class="category__header">
+              <div class="page__box">
+                <div class="category__flex-box">
+                  <div class="category__name">Промокоды</div>
+                  <div class="category__toggler category__toggler_inactive">
+                    Посмотреть полностью
+                    <svg class="category__arrow">
+                      <use xlink:href="./assets/svg_sprite.svg#arrow_down"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="category__table none">
+              <div class="page__box">
+                <div class="category__grid-box">
+                  <a class="infocard infocard_light" href="#">
+                    <div class="infocard__image">
+                      <div class="infocard__darken"></div>
+                      <img class="infocard__image" src="../../assets/images/infocard_image.png" />
+                    </div>
+                    <div class="infocard__info">
+                      <h2 class="infocard__title">На концерты</h2>
+                      <h3 class="infocard__subtitle">20 промокодов</h3>
+                      <p class="infocard__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non sagittis
+                        eget id dignissim vivamus maecenas congue. Orci ante dictum lectus diam non eu eget...
+                      </p>
+                      <button class="infocard__button">Посмотреть</button>
+                    </div>
+                  </a>
+                  <a class="infocard infocard_light" href="#">
+                    <div class="infocard__image">
+                      <div class="infocard__darken"></div>
+                      <img class="infocard__image" src="../../assets/images/infocard_image.png" />
+                    </div>
 
+                    <div class="infocard__info">
+                      <h2 class="infocard__title">На концерты</h2>
+                      <h3 class="infocard__subtitle">20 промокодов</h3>
+                      <p class="infocard__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non sagittis
+                        eget id dignissim vivamus maecenas congue. Orci ante dictum lectus diam non eu eget...
+                      </p>
+                      <button class="infocard__button">Посмотреть</button>
+                    </div>
+                  </a>
+                  <a class="infocard infocard_light" href="#">
+                    <div class="infocard__image">
+                      <div class="infocard__darken"></div>
+                      <img class="infocard__image" src="../../assets/images/infocard_image.png" />
+                    </div>
+
+                    <div class="infocard__info">
+                      <h2 class="infocard__title">На концерты</h2>
+                      <h3 class="infocard__subtitle">20 промокодов</h3>
+                      <p class="infocard__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non sagittis
+                        eget id dignissim vivamus maecenas congue. Orci ante dictum lectus diam non eu eget...
+                      </p>
+                      <button class="infocard__button">Посмотреть</button>
+                    </div>
+                  </a>
+                  <a class="infocard infocard_light" href="#">
+                    <div class="infocard__image">
+                      <div class="infocard__darken"></div>
+                      <img class="infocard__image" src="../../assets/images/infocard_image.png" />
+                    </div>
+
+                    <div class="infocard__info">
+                      <h2 class="infocard__title">На концерты</h2>
+                      <h3 class="infocard__subtitle">20 промокодов</h3>
+                      <p class="infocard__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non sagittis
+                        eget id dignissim vivamus maecenas congue. Orci ante dictum lectus diam non eu eget...
+                      </p>
+                      <button class="infocard__button">Посмотреть</button>
+                    </div>
+                  </a>
+                  <a class="infocard infocard_light" href="#">
+                    <div class="infocard__image">
+                      <div class="infocard__darken"></div>
+                      <img class="infocard__image" src="../../assets/images/infocard_image.png" />
+                    </div>
+
+                    <div class="infocard__info">
+                      <h2 class="infocard__title">На концерты</h2>
+                      <h3 class="infocard__subtitle">20 промокодов</h3>
+                      <p class="infocard__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non sagittis
+                        eget id dignissim vivamus maecenas congue. Orci ante dictum lectus diam non eu eget...
+                      </p>
+                      <button class="infocard__button">Посмотреть</button>
+                    </div>
+                  </a>
+                  <a class="infocard infocard_light" href="#">
+                    <div class="infocard__image">
+                      <div class="infocard__darken"></div>
+                      <img class="infocard__image" src="../../assets/images/infocard_image.png" />
+                    </div>
+
+                    <div class="infocard__info">
+                      <h2 class="infocard__title">На концерты</h2>
+                      <h3 class="infocard__subtitle">20 промокодов</h3>
+                      <p class="infocard__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non sagittis
+                        eget id dignissim vivamus maecenas congue. Orci ante dictum lectus diam non eu eget...
+                      </p>
+                      <button class="infocard__button">Посмотреть</button>
+                    </div>
+                  </a>
+                  <a class="infocard infocard_light" href="#">
+                    <div class="infocard__image">
+                      <div class="infocard__darken"></div>
+                      <img class="infocard__image" src="../../assets/images/infocard_image.png" />
+                    </div>
+
+                    <div class="infocard__info">
+                      <h2 class="infocard__title">На концерты</h2>
+                      <h3 class="infocard__subtitle">20 промокодов</h3>
+                      <p class="infocard__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non sagittis
+                        eget id dignissim vivamus maecenas congue. Orci ante dictum lectus diam non eu eget...
+                      </p>
+                      <button class="infocard__button">Посмотреть</button>
+                    </div>
+                  </a>
+                  <a class="infocard infocard_light" href="#">
+                    <div class="infocard__image">
+                      <div class="infocard__darken"></div>
+                      <img class="infocard__image" src="../../assets/images/infocard_image.png" />
+                    </div>
+
+                    <div class="infocard__info">
+                      <h2 class="infocard__title">На концерты</h2>
+                      <h3 class="infocard__subtitle">20 промокодов</h3>
+                      <p class="infocard__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non sagittis
+                        eget id dignissim vivamus maecenas congue. Orci ante dictum lectus diam non eu eget...
+                      </p>
+                      <button class="infocard__button">Посмотреть</button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
     <footer class="footer">
@@ -161,13 +306,15 @@
       </div>
     </footer>
 
+    <script src="./assets/js/dropper.js"></script>
     <script src="./assets/js/cities.js"></script>
     <script src="./assets/js/card.js"></script>
     <script src="./assets/js/slider.js"></script>
     <script src="./assets/js/category.js"></script>
-    <script src="./assets/js/main.js"></script>
     <script src="./assets/js/carousel.js"></script>
     <script src="./assets/js/searchDropdown.js"></script>
     <script src="./assets/js/repost.js"></script>
+    <script src="./assets/js/filters.js"></script>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>

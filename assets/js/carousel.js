@@ -63,10 +63,8 @@ let topEventsData = [
 
 let carouselTemplate = document.createElement('template');
 carouselTemplate.innerHTML = `
-    <div class="carousel">
-      <div class="carousel__tag">
-        Важные cобытия
-      </div>
+    <div class="carousel page__carousel">
+      <div class="carousel__tag"></div>
       <div class="carousel__button carousel__button_left">
         <svg class="carousel__icon carousel__icon_left">
           <use xlink:href="./assets/svg_sprite.svg#arrow_down_bold"></use>
@@ -95,8 +93,8 @@ carouselTemplate.innerHTML = `
     </div>
 `;
 
-function Carousel (items) {
-  this.carousel = carouselTemplate.content.cloneNode(true);
+function Carousel (items, title=false) {
+  this.carousel = carouselTemplate.content.cloneNode(true).querySelector('.carousel');
   this.flexBox = this.carousel.querySelector('.carousel__flex-box');
   this.scrollBox = this.carousel.querySelector('.carousel__scroll-box');
   this.prev = this.carousel.querySelector('.carousel__button_left');
@@ -107,6 +105,10 @@ function Carousel (items) {
   // this.step = getComputedStyle(items[0]).clientWidth + parseInt(slider.)
   this.counter = 0;
   this.currentScroll = 0;
+
+  if (title) {
+    this.carousel.querySelector('.carousel__tag').textContent = title;
+  }
 
 
   this.getNode = () => {
@@ -192,9 +194,9 @@ function Carousel (items) {
 
 let arr = [];
 for (e of topEventsData) {
-  let card = new Card(e, 'vertical', true);
+  let card = new Card(e, 'vertical', 'large');
   arr.push(card.getNode());
 }
-let topEventsSlider = new Carousel(arr);
+let topEventsSlider = new Carousel(arr, 'Важные события');
 
 document.body.querySelector('.page__main').prepend(topEventsSlider.getNode());

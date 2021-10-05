@@ -20,27 +20,97 @@ $pagePaddingMobile: 22px
     @media screen and (min-width: $media-md)
       margin-bottom: 50px
 
-
   &__carousel
+    margin-bottom: 50px
 
+    @media screen and (min-width: $media-md)
+      margin-bottom: 70px
+
+  &__recommendations
+    margin-bottom: 50px
+
+  &__filters
+    margin-bottom: 50px
+
+  &__top-ten-slider
+    display: block
+    margin-bottom: 50px
+
+    @media screen and (min-width: $media-md)
+      display: none
+
+  &__top-ten-carousel
+    display: none
+
+    @media screen and (min-width: $media-md)
+      display: block
+      margin-bottom: 50px
+
+  &__title
+    font-size: 14px
+    margin-bottom: 15px
+
+    @media screen and (min-width: $media-md)
+      margin-bottom: 20px
+
+  &__top-ten-title
+    display: block
+
+    @media screen and (min-width: $media-md)
+      display: none
 
   &__main
     background-color: $grey-1
 
   &__category-box
-    padding: 60px 0
+    padding: 60px 0 80px
 
     @media screen and (min-width: $media-md)
-      padding: 100px 0
+      padding: 100px 0 120px
 
-  &__category
-    margin-bottom: 60px
+    & .page__category
+      margin-bottom: 60px
 
-    &:last-child
-      margin-top: 0
+      &:last-child
+        margin-bottom: 0
+
+      @media screen and (min-width: $media-md)
+        margin-bottom: 100px
+
+  &__gives
+    & > .page__box
+      padding: 0
+
+      @media screen and (min-width: $media-lg)
+        padding: 0 $pagePadding
+
+    & .page__category
+      margin-top: -123px
+
+
+
+  &__add-event-box
+    background: url('../../assets/images/wide_image.png') no-repeat
+    background-size: cover
+    height: 335px
+    width: 100%
+    display: grid
+    place-items: center
 
     @media screen and (min-width: $media-md)
-      margin-bottom: 100px
+      height: 349px
+
+  &__add-event-button
+    background-color: $white
+    color: $black-1
+    font-size: 16px
+    padding: 18px 59px
+    border: none
+    border-radius: 10px
+
+    @media screen and (min-width: $media-md)
+      font-size: 24px
+      padding: 23px 63px
 
   &__modal
     position: fixed

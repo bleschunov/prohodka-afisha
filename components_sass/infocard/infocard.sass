@@ -1,0 +1,154 @@
+.infocard
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  background-color: $white
+  border-radius: 12px
+  position: relative
+  cursor: pointer
+
+  @media screen and (min-width: $media-md)
+    &:hover
+      & .infocard__button
+        display: block
+        z-index: 2
+
+  &:hover
+    background-color: $grey-1
+
+    & .infocard__darken
+      display: block
+
+
+  &__image
+    object-fit: cover
+    border-radius: 12px
+    position: relative
+    width: 100%
+
+  &__darken
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-color: $black-1
+    opacity: 0.6
+    display: none
+    z-index: 1
+    border-radius: 12px
+
+  &__info
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    padding: 10px
+
+  &__title
+    font-size: 14px
+    font-weight: 600
+    margin-bottom: 10px
+    color: $black-1
+
+    @media screen and (min-width: $media-md)
+      font-size: 18px
+
+  &__subtitle
+    font-size: 14px
+    color: $grey-2
+
+  &__text
+    display: none
+
+  &_light
+    width: 248px
+
+    & .infocard__image
+      height: 127px
+
+      @media screen and (min-width: $media-md)
+        height: 180px
+
+    @media screen and (min-width: $media-md)
+      padding: 10px
+      width: 355px
+
+    & .infocard__button
+      display: none
+
+      @media screen and (min-width: $media-md)
+        display: none
+        border: none
+        cursor: pointer
+        position: absolute
+        top: 40%
+        left: 50%
+        transform: translate(-50%, -50%)
+        background-color: $accent
+        color: $white
+        font-size: 18px
+        font-weight: 600
+        padding: 15px 58px
+        border-radius: 5px
+
+
+  &_extended
+    width: 335px
+
+    @media screen and (min-width: $media-md)
+      width: 377px
+
+    & .infocard
+      width: 335px
+
+      &__image
+        height: 378px
+
+        @media screen and (min-width: $media-md)
+          height: 240px
+
+      &__info
+        position: absolute
+        padding: 20px
+        bottom: 0
+        backdrop-filter: blur(8px)
+        background-color: $bg-search-window
+        border-radius: 12px
+
+        @media screen and (min-width: $media-md)
+          position: static
+          padding: 25px 20px 29px
+
+      &__title
+        margin-bottom: 10px
+        font-size: 18px
+        font-weight: 600
+
+        @media screen and (min-width: $media-md)
+          font-size: 24px
+
+      &__subtitle
+        display: none
+
+      &__text
+        display: block
+        font-size: 14px
+        color: $black-1
+        margin-bottom: 15px
+        line-height: 20px
+
+        @media screen and (min-width: $media-md)
+          margin-bottom: 20px
+
+      &__button
+        display: block
+        border: none
+        font-size: 14px
+        background-color: $black-4
+        color: $white
+        padding: 9px 0
+        border-radius: 5px
+        max-width: 123px
+
+        @media screen and (min-width: $media-md)
+          background-color: $accent

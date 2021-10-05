@@ -1,5 +1,6 @@
 .dropper
   flex-grow: 1
+  position: relative
 
   &_light
     & .dropper
@@ -14,6 +15,13 @@
       &__arrow
         color: $white
 
+      &__window
+        background-color: $white
+        position: absolute
+        left: 0
+        right: 0
+        z-index: 100
+
 
   &_dark
     & .dropper
@@ -27,6 +35,12 @@
 
       &__arrow
         color: $black-3
+
+      &__window
+        background-color: $grey-1
+
+      &__location
+        display: none
 
   &[open]
     & .dropper__arrow
@@ -44,6 +58,9 @@
 
     & .dropper__toggler
       z-index: 100
+
+    & .dropper__window
+      display: flex
 
   &__toggler
     cursor: pointer
@@ -67,7 +84,7 @@
     width: 15px
     height: 18px
 
-  &__city
+  &__current
     margin-left: 8px
 
   &__arrow-wrapper
@@ -83,13 +100,8 @@
     transition: transform 200ms ease-in-out
 
   &__window
-    background-color: $white
     padding: 16px
     border-radius: 0 0 10px 10px
-    position: absolute
-    left: 0
-    right: 0
-    z-index: 100
 
   &__menu
     list-style: none
@@ -100,6 +112,9 @@
     line-height: 22px
     font-size: 14px
     font-weight: 400
+
+    &_checked
+      font-weight: 600
 
   &__backend
     width: 0

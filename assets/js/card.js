@@ -1,4 +1,4 @@
-function Card (e, cardType='vertical', isLarge=false) {
+function Card (e, cardType='vertical', cardSize=false) {
   // console.log(e);
   this.card = cardTemplate.content.cloneNode(true).querySelector('.card');
   this.image = this.card.querySelector('.card__image');
@@ -31,8 +31,21 @@ function Card (e, cardType='vertical', isLarge=false) {
       this.card.querySelector('.tag').classList.toggle('tag_light')
   }
 
-  if (isLarge) {
-    this.card.classList.add('card_large')
+  switch (cardSize) {
+    case false:
+      break
+    case 'large':
+      this.card.classList.add('card_large');
+      this.card.style.backgroundImage = `url('${e.photo}')`;
+      this.card.querySelector('.tag').classList.toggle('tag_light')
+      break;
+    case 'medium':
+      this.card.classList.add('card_medium');
+      this.card.style.backgroundImage = `url('${e.photo}')`;
+      this.card.querySelector('.tag').classList.toggle('tag_light')
+      break;
+    default:
+      break;
   }
 
   this.cardName.textContent = e.name;

@@ -1,5 +1,45 @@
 .category
-  &__header
+  &_light
+    background-color: $white
+    border-radius: 10px
+
+    & .category
+      &__header
+        padding-top: 25px
+
+      &__grid-box
+        grid-template-columns: repeat(auto-fit, 248px)
+
+        @media screen and (min-width: $media-md)
+          grid-template-columns: repeat(auto-fit, 355px)
+
+      &__toggler
+        background-color: $white
+
+        &_inactive
+          color: $black-1
+
+        &_active
+          color: $accent
+
+          & .category__arrow
+            color: $accent
+
+      &__arrow
+        color: $black-1
+
+      &__slider
+        margin-top: 0
+
+      &__slider .page__box
+        padding: 0 40px
+
+      &__slider .slider__flex-box
+
+        @media screen and (min-width: $media-md)
+          gap: 0px
+
+
 
   &__flex-box
     display: flex
@@ -29,6 +69,9 @@
 
     &_active
       background-color: $accent
+
+      & .category__arrow
+        transform: rotate(180deg)
 
     &_inactive
       background-color: $black-5

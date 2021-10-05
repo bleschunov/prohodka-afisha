@@ -44,7 +44,7 @@
     padding: 28px 0 28px
     background-color: $grey-1
 
-    @media screen and (min-width: 700px)
+    @media screen and (min-width: $media-md)
       display: none
 
   &__flex-box_bottom
@@ -59,7 +59,7 @@
     &_top
       display: none
 
-      @media screen and (min-width: 700px)
+      @media screen and (min-width: $media-md)
         display: block
 
     &_bottom:focus-within ~ .header__icons_bottom
@@ -69,7 +69,7 @@
     &_top
       display: none
 
-      @media screen and (min-width: 700px)
+      @media screen and (min-width: $media-md)
         display: flex
         flex-wrap: nowrap
 
@@ -82,7 +82,7 @@
     &:hover
       color: $accent
 
-    @media screen and (min-width: 700px)
+    @media screen and (min-width: $media-md)
       color: $white
 
   &__person
@@ -94,5 +94,5 @@
     &:hover
       color: $accent
 
-    @media screen and (min-width: 700px)
+    @media screen and (min-width: $media-md)
       color: $white
