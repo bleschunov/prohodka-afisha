@@ -4,6 +4,12 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Gilroy Regular";
+  src: url("Gilroy-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
 :root {
   font-family: "Gilroy Regular", sans-serif;
   -webkit-box-sizing: border-box;
@@ -17,6 +23,13 @@ html {
 body {
   margin: 0;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -667,7 +680,7 @@ ul {
   gap: 20px;
 }
 .header__logo {
-  color: #06D10E;
+  color: #00FF19;
   width: 55px;
   height: 51px;
   -ms-flex-negative: 0;
@@ -967,11 +980,11 @@ ul {
   background-color: #F3F3F3;
 }
 .page__category-box {
-  padding: 60px 0 80px;
+  padding: 0 0 80px;
 }
 @media screen and (min-width: 800px) {
   .page__category-box {
-    padding: 100px 0 120px;
+    padding: 0 0 120px;
   }
 }
 .page__category-box .page__category {
@@ -995,6 +1008,44 @@ ul {
 }
 .page__gives .page__category {
   margin-top: -123px;
+  margin-bottom: 100px;
+}
+.page__news {
+  margin-bottom: 100px;
+}
+@media screen and (min-width: 800px) {
+  .page__news {
+    margin-bottom: 206px;
+  }
+}
+.page__news .slider__flex-box {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (min-width: 800px) {
+  .page__news .slider__flex-box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+.page__concurs {
+  margin-bottom: 15px;
+}
+.page__concurs:last-child {
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 800px) {
+  .page__concurs:last-child {
+    margin-bottom: 100px;
+  }
 }
 .page__add-event-box {
   background: url("../../assets/images/wide_image.png") no-repeat;
@@ -1010,6 +1061,7 @@ ul {
   }
 }
 .page__add-event-button {
+  cursor: pointer;
   background-color: #FFFFFF;
   color: #000000;
   font-size: 16px;
@@ -1020,8 +1072,13 @@ ul {
 @media screen and (min-width: 800px) {
   .page__add-event-button {
     font-size: 24px;
+    margin-top: -90px;
     padding: 23px 63px;
   }
+}
+.page__add-event-button:hover {
+  background: #06D10E;
+  color: #FFFFFF;
 }
 .page__modal {
   position: fixed;
@@ -1386,8 +1443,8 @@ ul {
   color: #06D10E;
 }
 .footer__logo {
-  color: #06D10E;
-  width: 55px;
+  color: #00FF19;
+  width: 70px;
   height: 51px;
   -webkit-transform: scale(1.5);
       -ms-transform: scale(1.5);
@@ -1769,7 +1826,9 @@ ul {
   }
 }
 .infocard_extended .infocard__button {
+  cursor: pointer;
   display: block;
+  position: static;
   border: none;
   font-size: 14px;
   background-color: #333333;
@@ -1782,6 +1841,53 @@ ul {
   .infocard_extended .infocard__button {
     background-color: #06D10E;
   }
+}
+
+.concurs {
+  background: url("../../assets/images/concurs_image.png") no-repeat;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 335px;
+  height: 172px;
+  padding: 15px 20px;
+}
+.concurs__title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+.concurs__info {
+  display: none;
+}
+@media screen and (min-width: 800px) {
+  .concurs__info {
+    display: block;
+    color: #FFFFFF;
+  }
+}
+.concurs__button {
+  border: none;
+  background-color: #FFFFFF;
+  color: #000000;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+.concurs__button:hover {
+  background: #06D10E;
+  color: #FFFFFF;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=main.css.map */

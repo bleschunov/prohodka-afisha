@@ -1,0 +1,36 @@
+.concurs
+  background: url("../../assets/images/concurs_image.png") no-repeat
+  border-radius: 10px
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  width: 335px
+  height: 172px
+  padding: 15px 20px
+
+  &__title
+    font-size: 18px
+    font-weight: 600
+    color: $white
+
+  &__info
+    display: none
+
+    @media screen and (min-width: $media-md)
+      display: block
+      color: $white
+
+  &__button
+    border: none
+    background-color: $white
+    color: $black-1
+    border-radius: 5px
+    font-size: 14px
+    padding: 10px
+    text-align: center
+    width: 100%
+
+    &:hover
+      background: $accent
+      color: $white
+      cursor: pointer

@@ -254,5 +254,18 @@ document.querySelector('.page__gives .category__toggler').addEventListener('clic
 });
 
 let givesData = document.querySelectorAll('.page__gives .infocard');
+for (give of givesData) {
+  give.classList.add('infocard_light')
+}
 let givesSlider = new Slider([].slice.call(givesData, 0, 4));
 document.querySelector('.page__gives .category').append(givesSlider.getNode());
+
+let newsData = [];
+for (give of givesData) {
+  let clone = give.cloneNode(true);
+  newsData.push(clone);
+  clone.classList.remove('infocard_light');
+  clone.classList.add('infocard_extended');
+}
+let newsSlider = new Slider([].slice.call(newsData, 0, 4));
+document.querySelector('.page__news').append(newsSlider.getNode());

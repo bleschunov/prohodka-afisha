@@ -43,11 +43,6 @@ function DropperItem (data) {
   this.getNode = () => {
     return this.item;
   }
-
-  // this.item.addEventListener('click', () => {
-  //   this.currentItem.textContent = this.name;
-  //   console.log(this.currentItem);
-  // })
 }
 
 function Dropper (items, dropperType='light') {
@@ -70,7 +65,7 @@ function Dropper (items, dropperType='light') {
 
   for (item of items) {
     let i = new DropperItem(item);
-    i.getNode().setAttribute('name', 'city');
+    i.getNode().querySelector('.dropper__backend').setAttribute('name', 'city');
     i.getNode().querySelector('.dropper__frontend').addEventListener('click', event => {
       this.currentItem.textContent = event.target.textContent;
       this.dropper.querySelector('.dropper__toggler-left').append(this.currentItem);

@@ -63,10 +63,10 @@ $pagePaddingMobile: 22px
     background-color: $grey-1
 
   &__category-box
-    padding: 60px 0 80px
+    padding: 0 0 80px
 
     @media screen and (min-width: $media-md)
-      padding: 100px 0 120px
+      padding: 0 0 120px
 
     & .page__category
       margin-bottom: 60px
@@ -86,8 +86,30 @@ $pagePaddingMobile: 22px
 
     & .page__category
       margin-top: -123px
+      margin-bottom: 100px
 
+  &__news
+    margin-bottom: 100px
 
+    @media screen and (min-width: $media-md)
+      margin-bottom: 206px
+
+    & .slider__flex-box
+      flex-direction: column
+      gap: 25px
+      align-items: center
+
+      @media screen and (min-width: $media-md)
+        flex-direction: row
+
+  &__concurs
+    margin-bottom: 15px
+
+    &:last-child
+      margin-bottom: 50px
+
+      @media screen and (min-width: $media-md)
+        margin-bottom: 100px
 
   &__add-event-box
     background: url('../../assets/images/wide_image.png') no-repeat
@@ -101,6 +123,7 @@ $pagePaddingMobile: 22px
       height: 349px
 
   &__add-event-button
+    cursor: pointer
     background-color: $white
     color: $black-1
     font-size: 16px
@@ -110,7 +133,12 @@ $pagePaddingMobile: 22px
 
     @media screen and (min-width: $media-md)
       font-size: 24px
+      margin-top: -90px
       padding: 23px 63px
+
+    &:hover
+      background: $accent
+      color: $white
 
   &__modal
     position: fixed
