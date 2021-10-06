@@ -4,13 +4,13 @@ dropperTemplate.innerHTML = `
     <summary class="dropper__toggler">
       <div class="dropper__toggler-left">
         <svg class="dropper__location">
-          <use xlink:href="../../assets/svg_sprite.svg#location"></use>
+          <use xlink:href="./assets/svg_sprite.svg#location"></use>
         </svg>
         <div class="dropper__current"></div>
       </div>
       <div class="dropper__arrow-wrapper">
         <svg class="dropper__arrow">
-          <use xlink:href="../../assets/svg_sprite.svg#arrow_down"></use>
+          <use xlink:href="./assets/svg_sprite.svg#arrow_down"></use>
         </svg>
       </div>
     </summary>

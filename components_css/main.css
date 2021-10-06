@@ -1055,7 +1055,7 @@ ul {
   }
 }
 .page__add-event-box {
-  background: url("../../assets/images/wide_image.png") no-repeat;
+  background: url("./assets/images/wide_image.png") no-repeat;
   background-size: cover;
   height: 335px;
   width: 100%;
@@ -1877,7 +1877,7 @@ ul {
 }
 
 .concurs {
-  background: url("../../assets/images/concurs_image.png") no-repeat;
+  background: url("./assets/images/concurs_image.png") no-repeat;
   border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
