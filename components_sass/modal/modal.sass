@@ -1,4 +1,25 @@
 .modal
+
+  &_news
+    width: 90%
+    height: 80vh
+    overflow-y: scroll
+    & .modal
+
+      &__main
+        display: flex
+
+      &__text
+        padding: 19px
+        line-height: 25px
+
+      &__title
+        font-size: 64
+        font-weight: 600
+
+      &__image
+        object-fit: contain
+
   background: $white
   display: flex
   flex-direction: column

@@ -481,6 +481,7 @@ ul {
   display: flex;
 }
 .dropper__toggler {
+  position: relative;
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -514,6 +515,12 @@ ul {
   margin-left: 8px;
 }
 .dropper__arrow-wrapper {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   justify-self: flex-end;
   width: 18px;
   height: 18px;
@@ -1100,6 +1107,8 @@ ul {
 .slider {
   position: relative;
   overflow-x: scroll;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 @media screen and (min-width: 800px) {
   .slider {
@@ -1166,6 +1175,7 @@ ul {
   width: 50px;
   height: 16px;
   color: #FFFFFF;
+  position: absolute;
 }
 .slider__icon_left {
   -webkit-transform: rotate(90deg);
@@ -1265,6 +1275,7 @@ ul {
   width: 50px;
   height: 16px;
   color: #FFFFFF;
+  position: absolute;
 }
 .carousel__icon_left {
   -webkit-transform: rotate(90deg);
@@ -1476,6 +1487,28 @@ ul {
   height: 311px;
   padding: 20px;
   gap: 20px;
+}
+.modal_news {
+  width: 90%;
+  height: 80vh;
+  overflow-y: scroll;
+}
+.modal_news .modal__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.modal_news .modal__text {
+  padding: 19px;
+  line-height: 25px;
+}
+.modal_news .modal__title {
+  font-size: 64;
+  font-weight: 600;
+}
+.modal_news .modal__image {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 @media screen and (min-width: 800px) {
   .modal {
@@ -1856,7 +1889,7 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 335px;
+  max-width: 295px;
   height: 172px;
   padding: 15px 20px;
 }

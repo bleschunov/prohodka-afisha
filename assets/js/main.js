@@ -264,8 +264,75 @@ let newsData = [];
 for (give of givesData) {
   let clone = give.cloneNode(true);
   newsData.push(clone);
+  clone.addEventListener('click', () => {
+    modalNews.classList.toggle('none');
+  })
   clone.classList.remove('infocard_light');
   clone.classList.add('infocard_extended');
 }
 let newsSlider = new Slider([].slice.call(newsData, 0, 4));
 document.querySelector('.page__news').append(newsSlider.getNode());
+
+// modalNews
+let modalNews = document.querySelector('.modal_news');
+modalNews.querySelector('.modal__cross').addEventListener('click', () => {
+  modalNews.classList.toggle('none');
+})
+
+let eventPageData = [
+  {
+    category_id: 1,
+    name: "Туса века",
+    id_str: "toosa_veka",
+    photo: "./assets/images/card_vertical_template.png",
+    category: "Тусовка",
+    address: "Малая Почтовая, 2/2",
+    date: "7 сентября",
+    time: "20:00",
+    link: "https://prohodka.com/event/toosa_veka",
+    is_liked: true
+  },
+  {
+    category_id: 1,
+    name: "Туса века",
+    id_str: "toosa_veka",
+    photo: "./assets/images/card_vertical_template.png",
+    category: "Тусовка",
+    address: "Малая Почтовая, 2/2",
+    date: "7 сентября",
+    time: "20:00",
+    link: "https://prohodka.com/event/toosa_veka",
+    is_liked: false
+  },
+  {
+    category_id: 1,
+    name: "Туса века",
+    id_str: "toosa_veka",
+    photo: "./assets/images/card_vertical_template.png",
+    category: "Тусовка",
+    address: "Малая Почтовая, 2/2",
+    date: "7 сентября",
+    time: "20:00",
+    link: "https://prohodka.com/event/toosa_veka",
+    is_liked: false
+  },
+  {
+    category_id: 1,
+    name: "Туса века",
+    id_str: "toosa_veka",
+    photo: "./assets/images/card_vertical_template.png",
+    category: "Тусовка",
+    address: "Малая Почтовая, 2/2",
+    date: "7 сентября",
+    time: "20:00",
+    link: "https://prohodka.com/event/toosa_veka",
+    is_liked: false
+  },
+]
+let eventPageCards = []
+for (c of eventPageData) {
+  let card = new Card(c, 'vertical');
+  eventPageCards.push(card.getNode());
+}
+let eventPageSlider = new Slider(eventPageCards);
+modalNews.append(eventPageSlider.getNode());

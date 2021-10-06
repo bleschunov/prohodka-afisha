@@ -61,7 +61,7 @@ let main = document.querySelector('main');
 function Repost (event) {
   this.modal = modalTemplate.content.cloneNode(true).querySelector('.modal');
   this.inputs = this.modal.querySelectorAll('.modal__input');
-  this.copies = this.modal.querySelectorAll('.modal__copy');
+  this.copies = this.modal.querySelectorAll('.modal__copy-wrapper');
   this.cross = this.modal.querySelector('.modal__cross');
   this.bg = modalTemplate.content.cloneNode(true).querySelector('.opacitybg');
 
