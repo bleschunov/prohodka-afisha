@@ -4,28 +4,28 @@ modalTemplate.innerHTML = `
   <div class="modal__header">
     <div class="modal__title">Поделиться</div>
     <svg class="modal__cross">
-      <use xlink:href="../../assets/svg_sprite.svg#cross"></use>
+      <use xlink:href="./assets/svg_sprite.svg#cross"></use>
     </svg>
   </div>
   <ul class="modal__socials">
     <li class="modal__social-item">
       <a href="#">
         <svg class="modal__social">
-          <use xlink:href="../../assets/svg_sprite.svg#vk"></use>
+          <use xlink:href="./assets/svg_sprite.svg#vk"></use>
         </svg>
       </a>
     </li>
     <li class="modal__social-item">
       <a href="#">
         <svg class="modal__social">
-          <use xlink:href="../../assets/svg_sprite.svg#facebook"></use>
+          <use xlink:href="./assets/svg_sprite.svg#facebook"></use>
         </svg>
       </a>
     </li>
     <li class="modal__social-item">
       <a href="#">
         <svg class="modal__social">
-          <use xlink:href="../../assets/svg_sprite.svg#instagram"></use>
+          <use xlink:href="./assets/svg_sprite.svg#instagram"></use>
         </svg>
       </a>
     </li>
@@ -36,7 +36,7 @@ modalTemplate.innerHTML = `
       <input class="modal__input" type="text" />
       <div class="modal__copy-wrapper">
         <svg class="modal__copy">
-          <use xlink:href="../../assets/svg_sprite.svg#copy"></use>
+          <use xlink:href="./assets/svg_sprite.svg#copy"></use>
         </svg>
       </div>
     </div>
@@ -47,7 +47,7 @@ modalTemplate.innerHTML = `
       <input class="modal__input" type="text" />
       <div class="modal__copy-wrapper">
         <svg class="modal__copy">
-          <use xlink:href="../../assets/svg_sprite.svg#copy"></use>
+          <use xlink:href="./assets/svg_sprite.svg#copy"></use>
         </svg>
       </div>
     </div>
