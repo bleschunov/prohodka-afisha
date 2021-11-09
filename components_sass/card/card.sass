@@ -67,6 +67,9 @@ $cardWidthLarge: 295px
     color: $white
 
   &__blur
+    display: flex
+    flex-direction: column
+    justify-content: space-between
     background: $bg-blur-white
     backdrop-filter: blur(6px)
     padding: 16px 20px
@@ -139,11 +142,11 @@ $cardWidthLarge: 295px
 
   &_horizontal
     width: 252px
-    height: 145px
+    min-height: 145px
 
     @media screen and (min-width: $media-md)
       width: 375px
-      height: 177px
+      min-height: 177px
 
     & .card__wrapper
       flex-direction: row-reverse

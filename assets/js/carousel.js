@@ -9,18 +9,6 @@ let topEventsData = [
     date: "7 сентября",
     time: "20:00",
     link: "https://prohodka.com/event/toosa_veka",
-    is_liked: true
-  },
-  {
-    category_id: 1,
-    name: "Туса века",
-    id_str: "toosa_veka",
-    photo: "./assets/images/large_card.png",
-    category: "Тусовка",
-    address: "Малая Почтовая, 2/2 стр. 1",
-    date: "7 сентября",
-    time: "20:00",
-    link: "https://prohodka.com/event/toosa_veka",
     is_liked: false
   },
   {
@@ -76,11 +64,11 @@ carouselTemplate.innerHTML = `
         </svg>
       </div>
       <div class="carousel__progress">
-        <div class="carousel__unit carousel__unit_current"></div>
+        <!-- <div class="carousel__unit carousel__unit_current"></div>
         <div class="carousel__unit"></div>
         <div class="carousel__unit"></div>
         <div class="carousel__unit"></div>
-        <div class="carousel__unit"></div>
+        <div class="carousel__unit"></div> -->
       </div>
       <div class="carousel__scroll-box">
         <div class="carousel__flex-box">
@@ -99,17 +87,25 @@ function Carousel (items, title=false) {
   this.scrollBox = this.carousel.querySelector('.carousel__scroll-box');
   this.prev = this.carousel.querySelector('.carousel__button_left');
   this.next = this.carousel.querySelector('.carousel__button_right');
-  this.units = this.carousel.querySelectorAll('.carousel__unit');
+  this.units = [];
   this.items = items;
   this.transitionDuration = getComputedStyle(items[0]).transitionDuration;
   // this.step = getComputedStyle(items[0]).clientWidth + parseInt(slider.)
   this.counter = 0;
   this.currentScroll = 0;
 
+  for (item of this.items) {
+    let unit = document.createElement('div');
+    unit.classList.add('carousel__unit');
+    this.units.push(unit);
+    this.carousel.querySelector('.carousel__progress').append(unit);
+    console.log(unit);
+  }
+  this.units[0].classList.add('carousel__unit_current');
+
   if (title) {
     this.carousel.querySelector('.carousel__tag').textContent = title;
   }
-
 
   this.getNode = () => {
     return this.carousel;

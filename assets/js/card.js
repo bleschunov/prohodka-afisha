@@ -85,7 +85,7 @@ cardTemplate.innerHTML = `
       <div class="card__blur">
         <!-- <a class="card__href"> -->
           <!-- <div class="card__flex-box"> -->
-            <h4 class="card__title"></h4>
+            <h4 class="card__title"><sup class="card__age">16+</sup></h4>
             <p class="card__info card__date">
               Date
             </p>

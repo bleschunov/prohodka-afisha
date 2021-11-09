@@ -6,387 +6,53 @@
     <title>Button</title>
     <style>
       .card {
-
+        margin: 50px;
       }
     </style>
   </head>
   <body>
-    <template id="cardTemplate">
-      <a class="card card_vertical" href="#" style="background-image: url('../../assets/images/card_vertical_template.png')">
-        <div class="card__wrapper">
-          <div class="card__header">
-            <div class="card__repost-wrapper">
-              <svg class="card__repost">
-                <use xlink:href="../../assets/svg_sprite.svg#repost"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="card__blur">
-            <h4 class="card__title"></h4>
-            <p class="card__info card__date">
-
-            </p>
-            <p class="card__info card__location">
-
-            </p>
-            <div class="card__footer">
-                <div class="card__tag-wrapper">
-                  <div class="tag tag_light">от 1000 руб.</div>
-                </div>
-                <label class="card__like">
-                  <input class="card__backend" type="checkbox"/>
-                  <svg class="card__frontend card__frontend_checked">
-                    <use xlink:href="../../assets/svg_sprite.svg#like_checked"></use>
-                  </svg>
-                  <svg class="card__frontend card__frontend_unchecked">
-                    <use xlink:href="../../assets/svg_sprite.svg#like_unchecked"></use>
-                  </svg>
-                </label>
-            </div>
+    <div class="card card_horizontal">
+      <a class="card__buy">
+        Купить
+      </a>
+      <div class="card__image" style="background-image: url('../../assets/images/card_horizontal_template.png')"></div>
+      <div class="card__wrapper">
+        <div class="card__header">
+          <div class="card__repost-wrapper">
+            <svg class="card__repost">
+              <use xlink:href="../../assets/svg_sprite.svg#repost"></use>
+            </svg>
           </div>
         </div>
-      </a>
-    </template>
-    <!-- <div>
-      <a class="card card_vertical" href="#" style="background-image: url('../../assets/images/card_vertical_template.png')">
-        <div class="card__wrapper">
-          <div class="card__header">
-            <div class="card__repost-wrapper">
-              <svg class="card__repost">
-                <use xlink:href="../../assets/svg_sprite.svg#repost"></use>
-              </svg>
+        <div class="card__blur">
+          <!-- <a class="card__href"> -->
+            <!-- <div class="card__flex-box"> -->
+              <h4 class="card__title"></h4>
+              <p class="card__info card__date">
+                Date
+              </p>
+              <p class="card__info card__location">
+                Location
+              </p>
+              <div class="card__footer">
+                  <div class="card__tag-wrapper">
+                    <div class="tag">от 1000 руб.</div>
+                  </div>
+                  <label class="card__like">
+                    <input class="card__backend" type="checkbox"/>
+                    <svg class="card__frontend card__frontend_checked">
+                      <use xlink:href="../../assets/svg_sprite.svg#like_checked"></use>
+                    </svg>
+                    <svg class="card__frontend card__frontend_unchecked">
+                      <use xlink:href="../../assets/svg_sprite.svg#like_unchecked"></use>
+                    </svg>
+                  </label>
+              <!-- </div> -->
             </div>
-          </div>
-          <div class="card__blur">
-            <h4 class="card__title">Jeembo<sup>16+</sup></h4>
-            <p class="card__info">
-              8 октября, 20:00<br />
-              Большой театр
-            </p>
-            <div class="card__footer">
-                <div class="card__tag-wrapper">
-                  <div class="tag tag_light">от 1000 руб.</div>
-                </div>
-                <label class="card__like">
-                  <input class="card__backend" type="checkbox"/>
-                  <svg class="card__frontend card__frontend_checked">
-                    <use xlink:href="../../assets/svg_sprite.svg#like_checked"></use>
-                  </svg>
-                  <svg class="card__frontend card__frontend_unchecked">
-                    <use xlink:href="../../assets/svg_sprite.svg#like_unchecked"></use>
-                  </svg>
-                </label>
-            </div>
-          </div>
+          <!-- </a> -->
         </div>
-      </a>
-      <a class="card card_vertical" href="#" style="background-image: url('../../assets/images/card_vertical_template.png')">
-        <div class="card__wrapper">
-          <div class="card__header">
-            <div class="card__repost-wrapper">
-              <svg class="card__repost">
-                <use xlink:href="../../assets/svg_sprite.svg#repost"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="card__blur">
-            <h4 class="card__title">Jeembo<sup>16+</sup></h4>
-            <p class="card__info">
-              8 октября, 20:00<br />
-              Большой театр
-            </p>
-            <div class="card__footer">
-                <div class="card__tag-wrapper">
-                  <div class="tag tag_light">от 1000 руб.</div>
-                </div>
-                <label class="card__like">
-                  <input class="card__backend" type="checkbox"/>
-                  <svg class="card__frontend card__frontend_checked">
-                    <use xlink:href="../../assets/svg_sprite.svg#like_checked"></use>
-                  </svg>
-                  <svg class="card__frontend card__frontend_unchecked">
-                    <use xlink:href="../../assets/svg_sprite.svg#like_unchecked"></use>
-                  </svg>
-                </label>
-            </div>
-          </div>
-        </div>
-      </a>
-      <a class="card card_vertical" href="#" style="background-image: url('../../assets/images/card_vertical_template.png')">
-        <div class="card__wrapper">
-          <div class="card__header">
-            <div class="card__repost-wrapper">
-              <svg class="card__repost">
-                <use xlink:href="../../assets/svg_sprite.svg#repost"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="card__blur">
-            <h4 class="card__title">Jeembo<sup>16+</sup></h4>
-            <p class="card__info">
-              8 октября, 20:00<br />
-              Большой театр
-            </p>
-            <div class="card__footer">
-                <div class="card__tag-wrapper">
-                  <div class="tag tag_light">от 1000 руб.</div>
-                </div>
-                <label class="card__like">
-                  <input class="card__backend" type="checkbox"/>
-                  <svg class="card__frontend card__frontend_checked">
-                    <use xlink:href="../../assets/svg_sprite.svg#like_checked"></use>
-                  </svg>
-                  <svg class="card__frontend card__frontend_unchecked">
-                    <use xlink:href="../../assets/svg_sprite.svg#like_unchecked"></use>
-                  </svg>
-                </label>
-            </div>
-          </div>
-        </div>
-      </a>
-      <a class="card card_vertical" href="#" style="background-image: url('../../assets/images/card_vertical_template.png')">
-        <div class="card__wrapper">
-          <div class="card__header">
-            <div class="card__repost-wrapper">
-              <svg class="card__repost">
-                <use xlink:href="../../assets/svg_sprite.svg#repost"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="card__blur">
-            <h4 class="card__title">Jeembo<sup>16+</sup></h4>
-            <p class="card__info">
-              8 октября, 20:00<br />
-              Большой театр
-            </p>
-            <div class="card__footer">
-                <div class="card__tag-wrapper">
-                  <div class="tag tag_light">от 1000 руб.</div>
-                </div>
-                <label class="card__like">
-                  <input class="card__backend" type="checkbox"/>
-                  <svg class="card__frontend card__frontend_checked">
-                    <use xlink:href="../../assets/svg_sprite.svg#like_checked"></use>
-                  </svg>
-                  <svg class="card__frontend card__frontend_unchecked">
-                    <use xlink:href="../../assets/svg_sprite.svg#like_unchecked"></use>
-                  </svg>
-                </label>
-            </div>
-          </div>
-        </div>
-      </a>
-      <a class="card card_vertical" href="#" style="background-image: url('../../assets/images/card_vertical_template.png')">
-        <div class="card__wrapper">
-          <div class="card__header">
-            <div class="card__repost-wrapper">
-              <svg class="card__repost">
-                <use xlink:href="../../assets/svg_sprite.svg#repost"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="card__blur">
-            <h4 class="card__title">Jeembo<sup>16+</sup></h4>
-            <p class="card__info">
-              8 октября, 20:00<br />
-              Большой театр
-            </p>
-            <div class="card__footer">
-                <div class="card__tag-wrapper">
-                  <div class="tag tag_light">от 1000 руб.</div>
-                </div>
-                <label class="card__like">
-                  <input class="card__backend" type="checkbox"/>
-                  <svg class="card__frontend card__frontend_checked">
-                    <use xlink:href="../../assets/svg_sprite.svg#like_checked"></use>
-                  </svg>
-                  <svg class="card__frontend card__frontend_unchecked">
-                    <use xlink:href="../../assets/svg_sprite.svg#like_unchecked"></use>
-                  </svg>
-                </label>
-            </div>
-          </div>
-        </div>
-      </a>
+      </div>
     </div>
-
-    <div>
-      <a class="card card_horizontal" href="#" style="background-image: url('../../assets/images/card_horizontal_template.png')">
-        <div class="card__wrapper">
-          <div class="card__header">
-            <label class="card__like">
-              <input class="card__backend" type="checkbox"/>
-              <svg class="card__frontend card__frontend_checked">
-                <use xlink:href="../../assets/svg_sprite.svg#like_checked"></use>
-              </svg>
-              <svg class="card__frontend card__frontend_unchecked">
-                <use xlink:href="../../assets/svg_sprite.svg#like_unchecked"></use>
-              </svg>
-            </label>
-          </div>
-          <div class="card__blur">
-            <h4 class="card__title">Jeembo<sup>16+</sup></h4>
-            <p class="card__info">
-              8 октября, 20:00<br />
-              Большой театр
-            </p>
-            <div class="card__footer">
-              <div class="card__tag-wrapper">
-                <div class="tag tag_light">от 1000 руб.</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </a><a class="card card_horizontal" href="#" style="background-image: url('../../assets/images/card_horizontal_template.png')">
-        <div class="card__wrapper">
-          <div class="card__header">
-            <label class="card__like">
-              <input class="card__backend" type="checkbox"/>
-              <svg class="card__frontend card__frontend_checked">
-                <use xlink:href="../../assets/svg_sprite.svg#like_checked"></use>
-              </svg>
-              <svg class="card__frontend card__frontend_unchecked">
-                <use xlink:href="../../assets/svg_sprite.svg#like_unchecked"></use>
-              </svg>
-            </label>
-          </div>
-          <div class="card__blur">
-            <h4 class="card__title">Jeembo<sup>16+</sup></h4>
-            <p class="card__info">
-              8 октября, 20:00<br />
-              Большой театр
-            </p>
-            <div class="card__footer">
-              <div class="card__tag-wrapper">
-                <div class="tag tag_light">от 1000 руб.</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </a><a class="card card_horizontal" href="#" style="background-image: url('../../assets/images/card_horizontal_template.png')">
-        <div class="card__wrapper">
-          <div class="card__header">
-            <label class="card__like">
-              <input class="card__backend" type="checkbox"/>
-              <svg class="card__frontend card__frontend_checked">
-                <use xlink:href="../../assets/svg_sprite.svg#like_checked"></use>
-              </svg>
-              <svg class="card__frontend card__frontend_unchecked">
-                <use xlink:href="../../assets/svg_sprite.svg#like_unchecked"></use>
-              </svg>
-            </label>
-          </div>
-          <div class="card__blur">
-            <h4 class="card__title">Jeembo<sup>16+</sup></h4>
-            <p class="card__info">
-              8 октября, 20:00<br />
-              Большой театр
-            </p>
-            <div class="card__footer">
-              <div class="card__tag-wrapper">
-                <div class="tag tag_light">от 1000 руб.</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </a><a class="card card_horizontal" href="#" style="background-image: url('../../assets/images/card_horizontal_template.png')">
-        <div class="card__wrapper">
-          <div class="card__header">
-            <label class="card__like">
-              <input class="card__backend" type="checkbox"/>
-              <svg class="card__frontend card__frontend_checked">
-                <use xlink:href="../../assets/svg_sprite.svg#like_checked"></use>
-              </svg>
-              <svg class="card__frontend card__frontend_unchecked">
-                <use xlink:href="../../assets/svg_sprite.svg#like_unchecked"></use>
-              </svg>
-            </label>
-          </div>
-          <div class="card__blur">
-            <h4 class="card__title">Jeembo<sup>16+</sup></h4>
-            <p class="card__info">
-              8 октября, 20:00<br />
-              Большой театр
-            </p>
-            <div class="card__footer">
-              <div class="card__tag-wrapper">
-                <div class="tag tag_light">от 1000 руб.</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </a>
-    </div> -->
-
-    <!-- large -->
-    <div>
-      <a class="card card_search" href="#">
-        <div class="card__image" style="background-image: url('../../assets/images/card_horizontal_template.png')"></div>
-        <div class="card__wrapper">
-          <div class="card__header">
-            <div class="card__repost-wrapper">
-              <svg class="card__repost">
-                <use xlink:href="../../assets/svg_sprite.svg#repost"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="card__blur">
-            <h4 class="card__title">Jeembo<sup>16+</sup></h4>
-            <p class="card__info">
-              8 октября, 20:00<br />
-              Большой театр
-            </p>
-            <div class="card__footer">
-                <div class="card__tag-wrapper">
-                  <div class="tag tag_dark">от 1000 руб.</div>
-                </div>
-                <label class="card__like">
-                  <input class="card__backend" type="checkbox"/>
-                  <svg class="card__frontend card__frontend_checked">
-                    <use xlink:href="../../assets/svg_sprite.svg#like_checked"></use>
-                  </svg>
-                  <svg class="card__frontend card__frontend_unchecked">
-                    <use xlink:href="../../assets/svg_sprite.svg#like_unchecked"></use>
-                  </svg>
-                </label>
-            </div>
-          </div>
-        </div>
-      </a>
-      <!-- <a class="card card_vertical card_top-10" href="#" style="background-image: url('../../assets/images/large_card.png')">
-        <div class="card__wrapper">
-          <div class="card__header">
-            <div class="card__repost-wrapper">
-              <svg class="card__repost">
-                <use xlink:href="../../assets/svg_sprite.svg#repost"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="card__blur">
-            <h4 class="card__title">Jeembo<sup>16+</sup></h4>
-            <p class="card__info">
-              8 октября, 20:00<br />
-              Большой театр
-            </p>
-            <div class="card__footer">
-                <div class="card__tag-wrapper">
-                  <div class="tag tag_light">от 1000 руб.</div>
-                </div>
-                <label class="card__like">
-                  <input class="card__backend" type="checkbox"/>
-                  <svg class="card__frontend card__frontend_checked">
-                    <use xlink:href="../../assets/svg_sprite.svg#like_checked"></use>
-                  </svg>
-                  <svg class="card__frontend card__frontend_unchecked">
-                    <use xlink:href="../../assets/svg_sprite.svg#like_unchecked"></use>
-                  </svg>
-                </label>
-            </div>
-          </div>
-        </div>
-      </a> -->
-    </div>
-
     <script src="../../assets/js/card.js"></script>
     <script src="../../assets/js/slider.js"></script>
   </body>

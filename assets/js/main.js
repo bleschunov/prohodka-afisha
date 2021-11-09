@@ -53,8 +53,8 @@ let recommendationsData = [
     id_str: "toosa_veka",
     photo: "./assets/images/card_horizontal_template.png",
     category: "Тусовка",
-    address: "Малая Почтовая, 2/2",
-    date: "7 сентября",
+    address: "Рыбновский Район, с. Новосёлки",
+    date: "16 Сентября 2022",
     time: "20:00",
     link: "https://prohodka.com/event/toosa_veka",
     is_liked: true

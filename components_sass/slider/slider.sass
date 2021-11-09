@@ -5,6 +5,9 @@
 
   @media screen and (min-width: $media-md)
     overflow-x: hidden
+    // display: flex
+    // flex-direction: column-reverse
+    // gap: 25px
 
   &::-webkit-scrollbar
     width: 0
@@ -13,6 +16,10 @@
     display: flex
     gap: 20px
     transition: transform 200ms ease
+
+  // &__buttons
+  //   display: flex
+  //   gap: 10px
 
   &__button
     display: none
@@ -30,6 +37,13 @@
       top: 0
       bottom: 0
       transition: opacity 200ms ease
+
+      &_alt
+        // position: static
+        // width: 20px
+        // height: 20px
+        // background: $accent
+        // opacity: 1
 
       &_left
         left: 0
