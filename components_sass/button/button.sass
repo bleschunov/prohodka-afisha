@@ -1,13 +1,64 @@
 .button
   background-color: $accent
-  padding: 14px 0
+  padding: 12px 0
   width: 100%
   border: none
   border-radius: 5px
   cursor: pointer
   font-size: 16px
   font-weight: 600
-  color: $white
+  color: $black-1
+  display: flex
+  justify-content: center
+  align-items: center
+  gap: 8px
+  transition: all ease-in-out 200ms
 
   &:hover
     transform: scale(0.997)
+
+  @media screen and (min-width: $media-md)
+    font-size: 18px
+
+  &__icon
+    width: 25px
+    height: 25px
+
+    @media screen and (min-width: $media-md)
+      width: 32px
+      height: 32px
+
+  &_lightText
+    color: $white
+
+  &_alt
+    background: $white
+    font-weight: 400
+    border: 1px solid $grey-3
+    font-size: 16px
+
+    &:hover
+      background-color: $blue-3
+      color: $white
+      border: none
+
+    @media screen and (min-width: $media-md)
+      font-size: 18px
+
+  &_vk
+    color: $white
+    background-color: $blue-2
+    font-size: 14px
+    font-weight: 400
+
+    @media screen and (min-width: $media-md)
+      font-size: 16px
+
+  &_instagram
+    color: $white
+    background: linear-gradient(232.21deg, #CC39A2 8.85%, #FF6040 54.67%, #F9F132 109.28%)
+    font-size: 14px
+    font-weight: 400
+
+    @media screen and (min-width: $media-md)
+      font-size: 16px

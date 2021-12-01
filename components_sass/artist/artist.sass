@@ -1,0 +1,23 @@
+.artist
+  display: flex
+  flex-direction: column
+  align-items: center
+
+
+  &__image
+    width: 70px
+    height: 70px
+    background: center / cover no-repeat
+    border-radius: 50%
+
+    @media screen and (min-width: $media-md)
+      width: 100px
+      height: 100px
+
+  &__name
+    text-align: center
+    color: $grey-2
+    font-size: 14px
+
+    @media screen and (min-width: $media-md)
+      font-size: 18px

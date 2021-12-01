@@ -17,6 +17,8 @@
     gap: 20px
     transition: transform 200ms ease
 
+    @media screen and (min-width: $media-lg)
+      justify-content: center
   // &__buttons
   //   display: flex
   //   gap: 10px
@@ -39,11 +41,8 @@
       transition: opacity 200ms ease
 
       &_alt
-        // position: static
-        // width: 20px
-        // height: 20px
-        // background: $accent
-        // opacity: 1
+        opacity: 1
+        background-color: transparent
 
       &_left
         left: 0
@@ -64,10 +63,13 @@
     flex-shrink: 0
 
   &__icon
-    width: 50px
+    width: 52px
     height: 16px
     color: $white
     position: absolute
+
+    &_alt
+      color: $accent
 
     &_left
       transform: rotate(90deg)

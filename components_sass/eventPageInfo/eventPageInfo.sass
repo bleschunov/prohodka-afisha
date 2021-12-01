@@ -1,0 +1,61 @@
+.eventPageInfo
+
+  &__flexBox
+    display: flex
+    flex-direction: column
+
+  &__header
+    display: flex
+    margin-bottom: 10px
+    align-items: center
+
+    @media screen and (min-width: $media-md)
+      margin-bottom: 20px
+
+  &__title
+    flex-grow: 1
+    font-size: 24px
+    font-weight: 600
+
+    @media screen and (min-width: $media-md)
+      font-size: 64px
+
+  &__age
+    display: grid
+    place-items: center
+    border-radius: 5px
+    background-color: $accent-alt
+    color: $black-4
+    width: 33px
+    height: 33px
+    font-size: 14px
+
+    @media screen and (min-width: $media-md)
+      background-color: $accent-alt-2
+      border: 1px solid $accent
+      font-size: 22px
+      width: 48px
+      height: 45px
+
+  &__tag
+    max-width: 130px
+    margin-bottom: 22px
+
+    @media screen and (min-width: $media-md)
+      margin-bottom: 63px
+
+  &__descriptionTitle
+    color: $grey-3
+    font-size: 14px
+    margin-bottom: 5px
+
+    @media screen and (min-width: $media-md)
+      font-size: 18px
+
+  &__description
+    color: $grey-2
+    font-size: 16px
+
+    @media screen and (min-width: $media-md)
+      color: $black-5
+      font-size: 18px

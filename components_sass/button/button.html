@@ -4,8 +4,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../components_css/main.css" />
     <title>Button</title>
+    <style>
+      .button {
+        margin-bottom: 50px
+      }
+    </style>
   </head>
   <body>
     <button class="button">Найти</button>
+    <button class="button button_alt">
+      Добавить в Google Календарь
+      <svg class="button__icon">
+        <use xlink:href="../../assets/svg_sprite.svg#google_calendar"></use>
+      </svg>
+    </button>
+    <button class="button button_alt">
+      Добавить в ICalendar
+      <svg class="button__icon">
+        <use xlink:href="../../assets/svg_sprite.svg#icalendar"></use>
+      </svg>
+    </button>
+    <button class="button button_instagram">
+      Instagram
+      <svg class="button__icon">
+        <use xlink:href="../../assets/svg_sprite.svg#vk_alt"></use>
+      </svg>
+    </button>
+    <button class="button button_vk">
+      VK
+      <svg class="button__icon">
+        <use xlink:href="../../assets/svg_sprite.svg#instagram_alt"></use>
+      </svg>
+    </button>
   </body>
 </html>

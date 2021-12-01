@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./components_css/main.css" />
+    <title>Mainpage</title>
+  </head>
+  <body class="eventPage">
+    <header class="header eventPage__header">
+      <div class="header__top">
+        <div class="page__box">
+          <div class="header__flex-box header__flex-box_top">
+            <div class="header__left">
+              <svg class="header__logo">
+                <use xlink:href="./assets/svg_sprite.svg#logo"></use>
+              </svg>
+              <div class="header__input-wrapper header__input-wrapper_top">
+                <div class="input">
+                  <input class="input__backend" type="text" placeholder="Поиск" />
+                  <svg class="input__search">
+                    <use xlink:href="./assets/svg_sprite.svg#search"></use>
+                  </svg>
+                  <div class="input__dropdown input__dropdown_top">
+                    <!-- cards -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="header__right">
+              <div class="header__dropper-wrapper">
+                <!-- Dropper -->
+              </div>
+              <div class="header__icons header__icons_top">
+                <svg class="header__cart">
+                  <use xlink:href="./assets/svg_sprite.svg#cart"></use>
+                </svg>
+                <svg class="header__person">
+                  <use xlink:href="./assets/svg_sprite.svg#person"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="page__box">
+          <div class="header__flex-box header__flex-box_bottom">
+            <div class="header__input-wrapper header__input-wrapper_bottom">
+              <div class="input">
+                <input class="input__backend" type="text" placeholder="Поиск" />
+                <svg class="input__search">
+                  <use xlink:href="./assets/svg_sprite.svg#search"></use>
+                </svg>
+                <div class="input__dropdown input__dropdown_bottom">
+                  <!-- cards -->
+                </div>
+              </div>
+            </div>
+            <div class="header__icons header__icons_bottom">
+              <svg class="header__cart">
+                <use xlink:href="./assets/svg_sprite.svg#cart"></use>
+              </svg>
+              <svg class="header__person">
+                <use xlink:href="./assets/svg_sprite.svg#person"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <div class="page__box">
+        <div class="navbar__flexBox">
+          <div class="navbar__back">
+            <svg class="navbar__backIcon">
+              <use xlink:href="../../assets/svg_sprite.svg#arrow_down"></use>
+            </svg>
+          </div>
+          <span class="navbar__backTitle">Назад</span>
+          <div class="navbar__listWrapper">
+            <ul class="navbar__list">
+              <li class="navbar__item">
+                <a class="navbar__link" href="#">Смешнявки</a>
+              </li>
+              <li class="navbar__item">
+                <a class="navbar__link" href="#">Смешнявки</a>
+              </li>
+              <li class="navbar__item">
+                <a class="navbar__link" href="#">Смешнявки</a>
+              </li>
+              <li class="navbar__item">
+                <a class="navbar__link" href="#">Смешнявки</a>
+              </li>
+              <li class="navbar__item">
+                <a class="navbar__link" href="#">Смешнявки</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="eventPage__grid eventPage__grid_alt">
+      <!-- AFISHA -->
+      <img class="eventPage__afisha" src="./assets/images/afisha_example.png" />
+      <!-- INFORMATION -->
+      <div class="eventPageInfo eventPage__eventPageInfo">
+        <div class="page__box">
+          <div class="eventPageInfo__flexBox">
+            <div class="eventPageInfo__header">
+              <span class="eventPageInfo__title">TwentyOnePilots</span>
+              <div class="eventPageInfo__age">12+</div>
+            </div>
+            <div class="tag tag_dark eventPageInfo__tag">Концерт</div>
+            <span class="eventPageInfo__descriptionTitle">Описание</span>
+            <p class="eventPageInfo__description">
+              Twenty One Pilots возвращаются в Москву с единственным шоу в
+              поддержку шестого альбома Scaled and Icy. Вышедший 21 мая этого
+              года лонгплей получил название путём сокращения фразы Scaled Back
+              and Isolated», которой фронтмен Тайлер Джозеф описал музыкальное
+              творчество в условиях пандемии.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- TO GET TO KNOW MORE BUTTON -->
+      <div class="eventPage__moreButton">
+        <div class="page__box">
+          <button class="button button_lightText">Узнать подробнее или купить билет</button>
+        </div>
+      </div>
+      <!-- TICKETS CAROUSEL -->
+      <!-- <div class="ticketsCarousel eventPage__ticketsCarousel">
+          <div class="page__box">
+            <div class="ticketsCarousel__container">
+              <div class="ticketCard">
+                <div class="ticketCard__left">
+                  <div class="ticketCard__date">
+                    <span class="ticketCard__day">14 Августа 2020</span>
+                    <span class="ticketCard__time">18:00</span>
+                  </div>
+                  <div class="ticketCard__dayTitle">Воскресенье</div>
+                  <div class="ticketCard__location">
+                    <svg class="ticketCard__locationIcon">
+                      <use xlink:href="../../assets/svg_sprite.svg#location"></use>
+                    </svg>
+                    Соборная площадь 21, Рязань
+                  </div>
+                </div>
+                <div class="ticketCard__right">
+                  <div class="ticketCard__prices">500-1000 руб.</div>
+                  <button class="ticketCard__button">Купить билет</button>
+                </div>
+              </div>
+              <div class="ticketCard">
+                <div class="ticketCard__left">
+                  <div class="ticketCard__date">
+                    <span class="ticketCard__day">14 Августа 2020</span>
+                    <span class="ticketCard__time">18:00</span>
+                  </div>
+                  <div class="ticketCard__dayTitle">Воскресенье</div>
+                  <div class="ticketCard__location">
+                    <svg class="ticketCard__locationIcon">
+                      <use xlink:href="../../assets/svg_sprite.svg#location"></use>
+                    </svg>
+                    Соборная площадь 21, Рязань
+                  </div>
+                </div>
+                <div class="ticketCard__right">
+                  <div class="ticketCard__prices">500-1000 руб.</div>
+                  <button class="ticketCard__button">Купить билет</button>
+                </div>
+              </div>
+              <div class="ticketCard">
+                <div class="ticketCard__left">
+                  <div class="ticketCard__date">
+                    <span class="ticketCard__day">14 Августа 2020</span>
+                    <span class="ticketCard__time">18:00</span>
+                  </div>
+                  <div class="ticketCard__dayTitle">Воскресенье</div>
+                  <div class="ticketCard__location">
+                    <svg class="ticketCard__locationIcon">
+                      <use xlink:href="../../assets/svg_sprite.svg#location"></use>
+                    </svg>
+                    Соборная площадь 21, Рязань
+                  </div>
+                </div>
+                <div class="ticketCard__right">
+                  <div class="ticketCard__prices">500-1000 руб.</div>
+                  <button class="ticketCard__button">Купить билет</button>
+                </div>
+              </div>
+              <div class="ticketCard">
+                <div class="ticketCard__left">
+                  <div class="ticketCard__date">
+                    <span class="ticketCard__day">14 Августа 2020</span>
+                    <span class="ticketCard__time">18:00</span>
+                  </div>
+                  <div class="ticketCard__dayTitle">Воскресенье</div>
+                  <div class="ticketCard__location">
+                    <svg class="ticketCard__locationIcon">
+                      <use xlink:href="../../assets/svg_sprite.svg#location"></use>
+                    </svg>
+                    Соборная площадь 21, Рязань
+                  </div>
+                </div>
+                <div class="ticketCard__right">
+                  <div class="ticketCard__prices">500-1000 руб.</div>
+                  <button class="ticketCard__button">Купить билет</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div> -->
+      <!-- TICKETS -->
+      <!-- <div class="eventPage__ticketsContainer">
+        <div class="page__box">
+          <div class="eventPage__ticketsContainerFlexBox">
+            <div class="ticket">
+              <div class="ticket__container">
+                <div class="ticket__header">
+                  <span class="ticket__title">Билет</span>
+                  <div class="ticket__price">1099</div>
+                </div>
+                <div class="ticket__main">
+                  <ul class="ticket__list">
+                    <li class="ticket__item">Самый лучший день</li>
+                    <li class="ticket__item">Самый лучший день</li>
+                    <li class="ticket__item">Самый лучший день</li>
+                    <li class="ticket__item">Самый лучший день</li>
+                  </ul>
+                  <div class="ticket__buttonWrapper">
+                      <button class="ticket__button">Купить сейчас</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ticket">
+              <div class="ticket__container">
+                <div class="ticket__header">
+                  <span class="ticket__title">Билет</span>
+                  <div class="ticket__price">1099</div>
+                </div>
+                <div class="ticket__main">
+                  <ul class="ticket__list">
+                    <li class="ticket__item">Самый лучший день</li>
+                    <li class="ticket__item">Самый лучший день</li>
+                    <li class="ticket__item">Самый лучший день</li>
+                    <li class="ticket__item">Самый лучший день</li>
+                  </ul>
+                  <div class="ticket__buttonWrapper">
+                      <button class="ticket__button">Купить сейчас</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ticket">
+              <div class="ticket__container">
+                <div class="ticket__header">
+                  <span class="ticket__title">Билет</span>
+                  <div class="ticket__price">1099</div>
+                </div>
+                <div class="ticket__main">
+                  <ul class="ticket__list">
+                    <li class="ticket__item">Самый лучший день</li>
+                    <li class="ticket__item">Самый лучший день</li>
+                    <li class="ticket__item">Самый лучший день</li>
+                    <li class="ticket__item">Самый лучший день</li>
+                  </ul>
+                  <div class="ticket__buttonWrapper">
+                      <button class="ticket__button">Купить сейчас</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <!-- BUTTON BLOCK -->
+      <div class="eventPage__calendarButtons">
+        <div class="page__box">
+          <div class="eventPage__calendarButtonsFlexBox">
+            <button class="button button_alt">
+              Добавить в Google Календарь
+              <svg class="button__icon">
+                <use xlink:href="../../assets/svg_sprite.svg#google_calendar"></use>
+              </svg>
+            </button>
+            <button class="button button_alt">
+              Добавить в ICalendar
+              <svg class="button__icon">
+                <use xlink:href="../../assets/svg_sprite.svg#icalendar"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- ARTIST SLIDER -->
+      <div class="eventPage__artistContainer">
+        <div class="page__box">
+          <h2 class="eventPage__artistContainerTitle">Артисты</h2>
+        </div>
+        <div class="slider">
+          <div class="page__box">
+            <div class="slider__flex-box">
+              <div class="slider__button slider__button_left slider__button_alt">
+                <svg class="slider__icon slider__icon_left slider__icon_alt">
+                  <use xlink:href="../../assets/svg_sprite.svg#arrow_down_bold"></use>
+                </svg>
+              </div>
+              <div class="slider__button slider__button_right slider__button_alt">
+                <svg class="slider__icon slider__icon_right slider__icon_alt">
+                  <use xlink:href="../../assets/svg_sprite.svg#arrow_down_bold"></use>
+                </svg>
+              </div>
+              <div class="artist">
+                <div class="artist__image" style="background-image: url('../../assets/images/artist.org.jpg')"></div>
+                <span class="artist__name">Tyler<br />Joseph</span>
+              </div>
+              <div class="artist">
+                <div class="artist__image" style="background-image: url('../../assets/images/artist.org.jpg')"></div>
+                <span class="artist__name">Tyler<br />Joseph</span>
+              </div>
+              <div class="artist">
+                <div class="artist__image" style="background-image: url('../../assets/images/artist.org.jpg')"></div>
+                <span class="artist__name">Tyler<br />Joseph</span>
+              </div>
+              <div class="artist">
+                <div class="artist__image" style="background-image: url('../../assets/images/artist.org.jpg')"></div>
+                <span class="artist__name">Tyler<br />Joseph</span>
+              </div>
+              <div class="artist">
+                <div class="artist__image" style="background-image: url('../../assets/images/artist.org.jpg')"></div>
+                <span class="artist__name">Tyler<br />Joseph</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- BUTTON BLOCK-->
+      <!-- <div class="eventPage__socialButtons">
+        <div class="page__box">
+          <div class="eventPage__socialButtonsFlexBox">
+            <button class="button button_instagram">
+              Instagram
+              <svg class="button__icon">
+                <use xlink:href="../../assets/svg_sprite.svg#vk_alt"></use>
+              </svg>
+            </button>
+            <button class="button button_vk">
+              VK
+              <svg class="button__icon">
+                <use xlink:href="../../assets/svg_sprite.svg#instagram_alt"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div> -->
+      <!-- STAGE -->
+      <div class="eventPage__stageContainer">
+        <div class="page__box">
+          <h2 class="eventPage__stageContainerTitle">Площадка</h2>
+        </div>
+        <div class="page__box">
+          <div class="stage">
+            <div class="stage__image" style="background-image: url('../../assets/images/stage.png')"></div>
+            <div class="stage__info">
+              <h3 class="stage__title">Винзавод</h3>
+              <div class="stage__location">
+                <svg class="stage__locationIcon">
+                  <use xlink:href="../../assets/svg_sprite.svg#location"></use>
+                </svg>
+                Соборная площадь 21, Рязань
+              </div>
+              <p class="stage__description">
+                Центр современного искусства Винзавод является первым и
+                самым большим частным центром современного искусства в России,
+                объединяющим галереи, образовательные программы, студии,
+                мастерские и шоу-румы.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SOURCE -->
+      <div class="eventPage__sourceContainer">
+        <div class="page__box">
+          <div class="eventPage__source"></div>
+          <p class="eventPage__callback">
+            Данное мероприятие собрано автоматически. Если хотите
+            пожаловаться, обратитесь на этот e-mail: boris228@mail.ru
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- RECOMMENDATIONS -->
+    <div class="eventPage__recommendationsContainer">
+      <div class="slider">
+        <div class="page__box">
+        <div class="slider__flex-box">
+          <div class="slider__button slider__button_left">
+            <svg class="slider__icon slider__icon_left">
+              <use xlink:href="../../assets/svg_sprite.svg#arrow_down_bold"></use>
+            </svg>
+          </div>
+          <div class="slider__button slider__button_right">
+            <svg class="slider__icon slider__icon_right">
+              <use xlink:href="../../assets/svg_sprite.svg#arrow_down_bold"></use>
+            </svg>
+          </div>
+          <a class="card card_vertical slider__item" href="#" style="background-image: url('../../assets/images/card_vertical_template.png')">
+            <div class="card__wrapper">
+              <div class="card__header">
+                <div class="card__repost-wrapper">
+                  <svg class="card__repost">
+                    <use xlink:href="../../assets/svg_sprite.svg#repost"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="card__blur">
+                <h4 class="card__title">Jeembo<sup>16+</sup></h4>
+                <p class="card__info">
+                  8 октября, 20:00<br />
+                  Большой театр
+                </p>
+                <div class="card__footer">
+                    <div class="card__tag-wrapper">
+                      <div class="tag tag_light">от 1000 руб.</div>
+                    </div>
+                    <label class="card__like">
+                      <input class="card__backend" type="checkbox"/>
+                      <svg class="card__frontend card__frontend_checked">
+                        <use xlink:href="../../assets/svg_sprite.svg#like_checked"></use>
+                      </svg>
+                      <svg class="card__frontend card__frontend_unchecked">
+                        <use xlink:href="../../assets/svg_sprite.svg#like_unchecked"></use>
+                      </svg>
+                    </label>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a class="card card_vertical slider__item" href="#" style="background-image: url('../../assets/images/card_vertical_template.png')">
+            <div class="card__wrapper">
+              <div class="card__header">
+                <div class="card__repost-wrapper">
+                  <svg class="card__repost">
+                    <use xlink:href="../../assets/svg_sprite.svg#repost"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="card__blur">
+                <h4 class="card__title">Jeembo<sup>16+</sup></h4>
+                <p class="card__info">
+                  8 октября, 20:00<br />
+                  Большой театр
+                </p>
+                <div class="card__footer">
+                    <div class="card__tag-wrapper">
+                      <div class="tag tag_light">от 1000 руб.</div>
+                    </div>
+                    <label class="card__like">
+                      <input class="card__backend" type="checkbox"/>
+                      <svg class="card__frontend card__frontend_checked">
+                        <use xlink:href="../../assets/svg_sprite.svg#like_checked"></use>
+                      </svg>
+                      <svg class="card__frontend card__frontend_unchecked">
+                        <use xlink:href="../../assets/svg_sprite.svg#like_unchecked"></use>
+                      </svg>
+                    </label>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a class="card card_vertical slider__item" href="#" style="background-image: url('../../assets/images/card_vertical_template.png')">
+            <div class="card__wrapper">
+              <div class="card__header">
+                <div class="card__repost-wrapper">
+                  <svg class="card__repost">
+                    <use xlink:href="../../assets/svg_sprite.svg#repost"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="card__blur">
+                <h4 class="card__title">Jeembo<sup>16+</sup></h4>
+                <p class="card__info">
+                  8 октября, 20:00<br />
+                  Большой театр
+                </p>
+                <div class="card__footer">
+                    <div class="card__tag-wrapper">
+                      <div class="tag tag_light">от 1000 руб.</div>
+                    </div>
+                    <label class="card__like">
+                      <input class="card__backend" type="checkbox"/>
+                      <svg class="card__frontend card__frontend_checked">
+                        <use xlink:href="../../assets/svg_sprite.svg#like_checked"></use>
+                      </svg>
+                      <svg class="card__frontend card__frontend_unchecked">
+                        <use xlink:href="../../assets/svg_sprite.svg#like_unchecked"></use>
+                      </svg>
+                    </label>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a class="card card_vertical slider__item" href="#" style="background-image: url('../../assets/images/card_vertical_template.png')">
+            <div class="card__wrapper">
+              <div class="card__header">
+                <div class="card__repost-wrapper">
+                  <svg class="card__repost">
+                    <use xlink:href="../../assets/svg_sprite.svg#repost"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="card__blur">
+                <h4 class="card__title">Jeembo<sup>16+</sup></h4>
+                <p class="card__info">
+                  8 октября, 20:00<br />
+                  Большой театр
+                </p>
+                <div class="card__footer">
+                    <div class="card__tag-wrapper">
+                      <div class="tag tag_light">от 1000 руб.</div>
+                    </div>
+                    <label class="card__like">
+                      <input class="card__backend" type="checkbox"/>
+                      <svg class="card__frontend card__frontend_checked">
+                        <use xlink:href="../../assets/svg_sprite.svg#like_checked"></use>
+                      </svg>
+                      <svg class="card__frontend card__frontend_unchecked">
+                        <use xlink:href="../../assets/svg_sprite.svg#like_unchecked"></use>
+                      </svg>
+                    </label>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a class="card card_vertical slider__item" href="#" style="background-image: url('../../assets/images/card_vertical_template.png')">
+            <div class="card__wrapper">
+              <div class="card__header">
+                <div class="card__repost-wrapper">
+                  <svg class="card__repost">
+                    <use xlink:href="../../assets/svg_sprite.svg#repost"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="card__blur">
+                <h4 class="card__title">Jeembo<sup>16+</sup></h4>
+                <p class="card__info">
+                  8 октября, 20:00<br />
+                  Большой театр
+                </p>
+                <div class="card__footer">
+                    <div class="card__tag-wrapper">
+                      <div class="tag tag_light">от 1000 руб.</div>
+                    </div>
+                    <label class="card__like">
+                      <input class="card__backend" type="checkbox"/>
+                      <svg class="card__frontend card__frontend_checked">
+                        <use xlink:href="../../assets/svg_sprite.svg#like_checked"></use>
+                      </svg>
+                      <svg class="card__frontend card__frontend_unchecked">
+                        <use xlink:href="../../assets/svg_sprite.svg#like_unchecked"></use>
+                      </svg>
+                    </label>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="page__box">
+        <div class="footer__flex-box">
+          <ul class="footer__info">
+            <p class="footer__contacts-info">
+              Контакты<br /><br /><br />
+              <a class="footer__link footer__tel" href="tel:+7-777-777-77-77">+7-777-777-77-77</a><br /><br />
+              <a class="footer__link footer__mail" href="mailto:mail@mail.com">mail@mail.com</a>
+            </p>
+            <div class="footer__socials">
+              <li class="footer__social-item">
+                <a href="#">
+                  <svg class="footer__social">
+                    <use xlink:href="../../assets/svg_sprite.svg#vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#">
+                  <svg class="footer__social">
+                    <use xlink:href="../../assets/svg_sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#">
+                  <svg class="footer__social">
+                    <use xlink:href="../../assets/svg_sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+            </div>
+          </ul>
+          <nav class="footer__nav-wrapper">
+            <ul class="footer__nav">
+              <div class="footer__nav-column">
+                <li class="footer__link-item"><a class="footer__link" href="#">Политика конфидециальности</a></li>
+                <li class="footer__link-item"><a class="footer__link" href="#">Главная</a></li>
+                <li class="footer__link-item"><a class="footer__link" href="#">Преимущества</a></li>
+                <li class="footer__link-item"><a class="footer__link" href="#">Спонсоры</a></li>
+              </div>
+              <div class="footer__nav-column">
+                <li class="footer__link-item"><a class="footer__link" href="#">Покупателям</a></li>
+                <li class="footer__link-item"><a class="footer__link" href="#">Организаторам</a></li>
+                <li class="footer__link-item"><a class="footer__link" href="#">Контакты</a></li>
+                <li class="footer__link-item"><a class="footer__link" href="#">Тарифы</a></li>
+              </div>
+            </ul>
+          </nav>
+          <svg class="footer__logo">
+            <use xlink:href="../../assets/svg_sprite.svg#logo"></use>
+          </svg>
+          <p class="footer__info footer__address-info">
+            Адрес<br /><br /><br />
+            г. Рязань<br />
+            ул. Касимовское шоссе
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/js/dropper.js"></script>
+    <script src="./assets/js/cities.js"></script>
+    <script src="./assets/js/card.js"></script>
+    <script src="./assets/js/slider.js"></script>
+    <script src="./assets/js/category.js"></script>
+    <script src="./assets/js/carousel.js"></script>
+    <script src="./assets/js/searchDropdown.js"></script>
+    <script src="./assets/js/repost.js"></script>
+    <script src="./assets/js/filters.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
