@@ -961,7 +961,7 @@ ul {
   }
 }
 .page__add-event-box {
-  background: url("../prohodka-afisha/assets/images/wide_image.png") no-repeat;
+  background: url("../../assets/images/wide_image.png") no-repeat;
   background-size: cover;
   height: 335px;
   width: 100%;
@@ -1044,6 +1044,12 @@ ul {
   border-radius: 10px 10px 0 0;
   grid-area: 1/1/3/2;
   margin-bottom: 36px;
+  object-position: top;
+}
+@media screen and (min-width: 800px) {
+  .eventPage__afisha {
+    height: 1000px;
+  }
 }
 @media screen and (min-width: 1555px) {
   .eventPage__afisha {

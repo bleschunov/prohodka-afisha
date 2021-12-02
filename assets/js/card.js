@@ -48,7 +48,7 @@ function Card (e, cardType='vertical', cardSize=false) {
       break;
   }
 
-  this.cardName.textContent = e.name;
+  this.cardName.innerHTML = `${e.name}<sup class="card__age">16+</sup>`;
   this.cardAddress.textContent = e.address;
   this.cardDate.textContent = e.date + ' ' + e.time
   if (e.is_liked) {
@@ -85,7 +85,7 @@ cardTemplate.innerHTML = `
       <div class="card__blur">
         <!-- <a class="card__href"> -->
           <!-- <div class="card__flex-box"> -->
-            <h4 class="card__title"><sup class="card__age">16+</sup></h4>
+            <h4 class="card__title"></h4>
             <p class="card__info card__date">
               Date
             </p>
