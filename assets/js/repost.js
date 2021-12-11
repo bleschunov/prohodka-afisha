@@ -1,71 +1,71 @@
-let modalTemplate = document.createElement('template');
-modalTemplate.innerHTML = `
-<div class="modal page__modal">
-  <div class="modal__header">
-    <div class="modal__title">Поделиться</div>
-    <svg class="modal__cross">
+let ourModalTemplate = document.createElement('template');
+ourModalTemplate.innerHTML = `
+<div class="ourModal page__ourModal">
+  <div class="ourModal__header">
+    <div class="ourModal__title">Поделиться</div>
+    <svg class="ourModal__cross">
       <use xlink:href="./assets/svg_sprite.svg#cross"></use>
     </svg>
   </div>
-  <ul class="modal__socials">
-    <li class="modal__social-item">
+  <ul class="ourModal__socials">
+    <li class="ourModal__social-item">
       <a href="#">
-        <svg class="modal__social">
+        <svg class="ourModal__social">
           <use xlink:href="./assets/svg_sprite.svg#vk"></use>
         </svg>
       </a>
     </li>
-    <li class="modal__social-item">
+    <li class="ourModal__social-item">
       <a href="#">
-        <svg class="modal__social">
+        <svg class="ourModal__social">
           <use xlink:href="./assets/svg_sprite.svg#facebook"></use>
         </svg>
       </a>
     </li>
-    <li class="modal__social-item">
+    <li class="ourModal__social-item">
       <a href="#">
-        <svg class="modal__social">
+        <svg class="ourModal__social">
           <use xlink:href="./assets/svg_sprite.svg#instagram"></use>
         </svg>
       </a>
     </li>
   </ul>
-  <label class="modal__href modal__event">
-    <div class="modal__info">Ссылка мероприятия</div>
-    <div class="modal__backend">
-      <input class="modal__input" type="text" />
-      <div class="modal__copy-wrapper">
-        <svg class="modal__copy">
+  <label class="ourModal__href ourModal__event">
+    <div class="ourModal__info">Ссылка мероприятия</div>
+    <div class="ourModal__backend">
+      <input class="ourModal__input" type="text" />
+      <div class="ourModal__copy-wrapper">
+        <svg class="ourModal__copy">
           <use xlink:href="./assets/svg_sprite.svg#copy"></use>
         </svg>
       </div>
     </div>
   </label>
-  <label class="modal__href modal__event-page">
-    <div class="modal__info">Ссылка страницы мероприятия</div>
-    <div class="modal__backend">
-      <input class="modal__input" type="text" />
-      <div class="modal__copy-wrapper">
-        <svg class="modal__copy">
+  <label class="ourModal__href ourModal__event-page">
+    <div class="ourModal__info">Ссылка страницы мероприятия</div>
+    <div class="ourModal__backend">
+      <input class="ourModal__input" type="text" />
+      <div class="ourModal__copy-wrapper">
+        <svg class="ourModal__copy">
           <use xlink:href="./assets/svg_sprite.svg#copy"></use>
         </svg>
       </div>
     </div>
   </label>
 </div>
-<div class="opacitybg modal__opacitybg"></div>
+<div class="opacitybg ourModal__opacitybg"></div>
 `
 
 let main = document.querySelector('main');
 
 function Repost (event) {
-  this.modal = modalTemplate.content.cloneNode(true).querySelector('.modal');
-  this.inputs = this.modal.querySelectorAll('.modal__input');
-  this.copies = this.modal.querySelectorAll('.modal__copy-wrapper');
-  this.cross = this.modal.querySelector('.modal__cross');
-  this.bg = modalTemplate.content.cloneNode(true).querySelector('.opacitybg');
+  this.ourModal = ourModalTemplate.content.cloneNode(true).querySelector('.ourModal');
+  this.inputs = this.ourModal.querySelectorAll('.ourModal__input');
+  this.copies = this.ourModal.querySelectorAll('.ourModal__copy-wrapper');
+  this.cross = this.ourModal.querySelector('.ourModal__cross');
+  this.bg = ourModalTemplate.content.cloneNode(true).querySelector('.opacitybg');
 
-  console.log(this.modal);
+  console.log(this.ourModal);
 
   this.inputs[0].value = event.link;
   this.copies[0].addEventListener('click', () => {
@@ -79,13 +79,13 @@ function Repost (event) {
   });
 
   this.display = () => {
-    main.append(this.modal);
+    main.append(this.ourModal);
     main.append(this.bg);
   }
 
   let close = () => {
     this.bg.remove();
-    this.modal.remove();
+    this.ourModal.remove();
   }
 
   this.cross.addEventListener('click', close);

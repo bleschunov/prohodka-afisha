@@ -70,9 +70,6 @@ function Card (e, cardType='vertical', cardSize=false) {
 let cardTemplate = document.createElement('template');
 cardTemplate.innerHTML = `
   <div class="card">
-    <a class="card__buy">
-      Купить
-    </a>
     <div class="card__image" style="background-image: url('../../assets/images/card_horizontal_template.png')"></div>
     <div class="card__wrapper">
       <div class="card__header">
@@ -94,7 +91,8 @@ cardTemplate.innerHTML = `
             </p>
             <div class="card__footer">
                 <div class="card__tag-wrapper">
-                  <div class="tag">от 1000 руб.</div>
+                  <!-- <div class="tag"><a class="card__tag" href="#">от 1000 руб.</a></div> -->
+                  <a class="tag card__tag" href="#">от 1000 руб.</a>
                 </div>
                 <label class="card__like">
                   <input class="card__backend" type="checkbox"/>

@@ -195,4 +195,4 @@ for (e of topEventsData) {
 }
 let topEventsSlider = new Carousel(arr, 'Важные события');
 
-document.body.querySelector('.page__main').prepend(topEventsSlider.getNode());
+//document.body.querySelector('.page__main').prepend(topEventsSlider.getNode());

@@ -19,20 +19,6 @@ $cardWidthLarge: 295px
   &:hover .card__buy
     display: block
 
-  &__buy
-    display: none
-    color: $white
-    font-size: 18px
-    padding: 15px 58px
-    background-color: $accent
-    border-radius: 5px
-    position: absolute
-    left: 50%
-    top: 50%
-    transform: translate(-50%, -50%)
-    cursor: pointer
-    z-index: 1
-
   &__wrapper
     display: flex
     justify-content: space-between
@@ -65,6 +51,12 @@ $cardWidthLarge: 295px
     width: 13px
     height: 11px
     color: $white
+
+  &__tag
+    display: block
+
+    &:hover
+      color: inherit
 
   &__blur
     display: flex
@@ -130,6 +122,9 @@ $cardWidthLarge: 295px
     width: $cardWidthSmall
     height: 265px
 
+    & .card__tag
+      color: $black-1
+
     & .card__wrapper
       flex-direction: column
 
@@ -148,11 +143,15 @@ $cardWidthLarge: 295px
       width: 375px
       min-height: 177px
 
+    & .card__tag
+      color: $black-1
+
     & .card__wrapper
       flex-direction: row-reverse
 
     & .card__blur
       border-radius: 10px 0 0 10px
+      min-width: 140px
 
   &_medium
     height: 300px
@@ -185,7 +184,7 @@ $cardWidthLarge: 295px
 
   &_large
     height: 365px
-    max-width: 770px
+    //max-width: 770px
     width: 100%
     border-radius: 0
 
@@ -218,6 +217,9 @@ $cardWidthLarge: 295px
     & .card
       &__header
         display: none
+
+      &__tag
+        color: $white
 
       &__image
         display: block

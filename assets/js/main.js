@@ -239,7 +239,7 @@ for (c of topTenData) {
   topTenCardsCarousel.push(card.getNode());
 }
 let topTenSlider = new Slider(topTenCardsSlider);
-let topTenCarousel = new Carousel(topTenCardsCarousel, 'Топ-10');
+let topTenCarousel = new Carousel(topTenCardsCarousel, 'Топ 10');
 topTenSlider.getNode().classList.add('page__top-ten-slider');
 topTenCarousel.getNode().classList.add('page__top-ten-carousel');
 document.querySelector('#topTen').after(topTenSlider.getNode());
@@ -265,7 +265,7 @@ for (give of givesData) {
   let clone = give.cloneNode(true);
   newsData.push(clone);
   clone.addEventListener('click', () => {
-    modalNews.classList.toggle('none');
+    ourModalNews.classList.toggle('none');
   })
   clone.classList.remove('infocard_light');
   clone.classList.add('infocard_extended');
@@ -273,10 +273,10 @@ for (give of givesData) {
 let newsSlider = new Slider([].slice.call(newsData, 0, 4));
 document.querySelector('.page__news').append(newsSlider.getNode());
 
-// modalNews
-let modalNews = document.querySelector('.modal_news');
-modalNews.querySelector('.modal__cross').addEventListener('click', () => {
-  modalNews.classList.toggle('none');
+// ourModalNews
+let ourModalNews = document.querySelector('.ourModal_news');
+ourModalNews.querySelector('.ourModal__cross').addEventListener('click', () => {
+  ourModalNews.classList.toggle('none');
 })
 
 let eventPageData = [
@@ -335,4 +335,4 @@ for (c of eventPageData) {
   eventPageCards.push(card.getNode());
 }
 let eventPageSlider = new Slider(eventPageCards);
-modalNews.append(eventPageSlider.getNode());
+ourModalNews.append(eventPageSlider.getNode());

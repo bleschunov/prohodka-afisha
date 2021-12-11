@@ -8,6 +8,8 @@ $pagePaddingMobile: 22px
 
   &__box
     padding: 0 $pagePaddingMobile
+    margin: 0 auto
+    max-width: 1560px
 
     @media screen and (min-width: $media-md)
       // max-width: 1560px
@@ -105,13 +107,14 @@ $pagePaddingMobile: 22px
         flex-direction: row
 
   &__concurs
-    margin-bottom: 15px
+    margin: 0 auto 15px
 
     &:last-child
       margin-bottom: 50px
 
       @media screen and (min-width: $media-md)
         margin-bottom: 100px
+        margin: 0 0 30px
 
   &__add-event-box
     background: url('../../assets/images/wide_image.png') no-repeat
@@ -143,7 +146,7 @@ $pagePaddingMobile: 22px
       background: $accent
       color: $white
 
-  &__modal
+  &__ourModal
     position: fixed
     z-index: 100
     left: 0

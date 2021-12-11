@@ -1,24 +1,28 @@
-.modal
+.ourModal
 
   &_news
     width: 90%
     height: 80vh
     overflow-y: scroll
-    & .modal
+
+    & .ourModal
 
       &__main
-        display: flex
+        // display: flex
 
       &__text
         padding: 19px
         line-height: 25px
+        text-align: justify
 
       &__title
         font-size: 64
         font-weight: 600
 
       &__image
-        object-fit: contain
+        object-fit: cover
+        width: 100%
+        height: 250px
 
   background: $white
   display: flex
@@ -111,7 +115,7 @@
     cursor: pointer
     border-radius: 0 5px 5px 0
 
-    &:hover .modal__copy
+    &:hover .ourModal__copy
       color: $accent
 
   &__copy
