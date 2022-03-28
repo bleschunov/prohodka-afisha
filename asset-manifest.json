@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/prohodka-afisha/static/css/main.9b2fce04.css",
+    "main.js": "/prohodka-afisha/static/js/main.f4c23d2b.js",
+    "static/media/Roboto-Regular.ttf": "/prohodka-afisha/static/media/Roboto-Regular.a8d6ac03c7b96b7acb62.ttf",
+    "static/media/Roboto-Bold.ttf": "/prohodka-afisha/static/media/Roboto-Bold.75371f53f06181df75f1.ttf",
+    "static/media/sprite.svg": "/prohodka-afisha/static/media/sprite.86c2b188a71a364762b153de331e2d8e.svg",
+    "static/media/spinner.svg": "/prohodka-afisha/static/media/spinner.78fbfc26b0ad80c88275594b6e50b269.svg",
+    "index.html": "/prohodka-afisha/index.html",
+    "main.9b2fce04.css.map": "/prohodka-afisha/static/css/main.9b2fce04.css.map",
+    "main.f4c23d2b.js.map": "/prohodka-afisha/static/js/main.f4c23d2b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9b2fce04.css",
+    "static/js/main.f4c23d2b.js"
+  ]
+}
