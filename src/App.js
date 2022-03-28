@@ -1,56 +1,45 @@
 import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
-import './App.css';
+import { useSelector } from 'react-redux';
+import { useGetEventsQuery } from './app/api';
+import './app.scss';
+
+import Header from './features/header/Header'
+import Footer from './features/footer/Footer'
+import CardList from './features/cardList/CardList';
+import Icon from './features/Icon/Icon';
+import Spinner from './features/spinner/Spinner';
+
+
+
 
 function App() {
+
+  // const city = useSelector(state => state.city.city.nameEn);
+  // const { data, isFetching } = useGetEventsQuery({ city, params: { ageFrom: '12' } });
+
+  // const renderCard = ({id, ...data}) => {
+  //   return (
+  //     <EventCard key={id} {...data} >
+  //       { VerticalCard }
+  //     </EventCard>
+  //   )
+  // }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
-      </header>
+    <div className="app">
+      <Header className="app__header" />
+
+      <CardList />
+      
+      {/* <RowOfCards className="app__rowOfCards" header={<TitleWithLink link="#">Россия</TitleWithLink>}>
+        { isFetching ? <Spinner /> : data.map(item => renderCard(item)) }
+      </RowOfCards> */}
+
+      {/* <RowOfCards className="app__rowOfCards" header={<TitleWithLink link="#">Россия</TitleWithLink>}>
+        { isFetching ? <Spinner /> : data.map(item => <EventCard key={item.id} vertical {...item} />) }
+      </RowOfCards> */}
+    
+      <Footer className="app__footer" />
     </div>
   );
 }

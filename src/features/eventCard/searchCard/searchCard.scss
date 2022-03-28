@@ -1,0 +1,55 @@
+@import '../../../app/styles/units.scss';
+@import '../../../app/styles/variables.scss';
+
+.searchCard {    
+    height: rem(110);
+
+    &__inner {
+        display: flex;
+        height: 100%;
+        gap: rem(24);
+    }
+
+    &__image {
+        object-fit: cover;
+        flex-shrink: 0;
+        width: 45%;
+    }
+
+    &__info {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__title {
+        font-size: rem(18)
+    }
+
+    &__date {
+        font-size: rem(12)
+    }
+
+    &__location {
+        font-size: rem(12)
+    }
+
+    &__price {
+        background-color: $black;
+        color: $white;
+        font-size: rem(10);
+        border-radius: rem(15);
+        display: inline-block;
+        padding: rem(7) rem(11);
+    
+        &:before {
+            content: 'от '
+        }
+
+        &:after {
+            content: ' руб.'
+        }
+    }
+
+}

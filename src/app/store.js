@@ -1,8 +1,16 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import dbApi from './api'
+import citySlice from './citySlice'
 
-export const store = configureStore({
+const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    [dbApi.reducerPath]: dbApi.reducer,
+    [citySlice.name]: citySlice.reducer
   },
+  middleware: getDefaultMiddleware =>
+    getDefaultMiddleware().concat(dbApi.middleware)
 });
+
+export default store
+
+

@@ -1,0 +1,111 @@
+@import '../../app/styles/variables.scss';
+@import '../../app/styles/units.scss';
+
+.desktop  {
+    display: none!important;
+
+    @media screen and (min-width: $l) {
+        display: flex!important;
+    }
+}
+
+.header {
+
+    &__header {
+        background-color: $black;
+        padding: rem(30) 0;
+    }
+
+    &__headerWrapper {
+        display: flex;
+        justify-content: space-between;
+        gap: rem(40);
+
+        @media screen and (min-width: $l) {
+            display: grid;
+            grid-template-columns: auto 1fr 1fr auto;
+            align-items: center;
+        }
+    }
+
+    &__subheader {
+        background-color: $lightGrey;
+        padding: rem(30) 0;
+
+        @media screen and (min-width: $l) {
+            display: none;
+        }
+    }
+    
+    &__subheaderWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    // SEARCH
+
+    &__searchHeader {
+        display: none;
+
+        @media screen and (min-width: $l) {
+            display: block;
+        }
+    }
+
+    &__searchSubheader {
+        display: block;
+
+        @media screen and (min-width: $l) {
+            display: none;
+        }
+    }
+
+    // DROPDOWM
+
+    &__dropdown {
+        justify-self: end;
+    }
+    
+    // ICONS
+
+    &__iconsGroup {
+        display: flex;
+        gap: rem(10);
+
+        @media screen and (min-width: $l) {
+            justify-self: end;
+        }
+    }
+
+    &__logo {
+        fill: $green;
+        width: rem(55);
+        height: rem(50);
+    }
+
+    &__arrow {
+        fill: $white;
+    }
+
+    &__cart {
+        fill: $grey;
+        width: rem(25);
+        height: rem(25);
+
+        @media screen and (min-width: $l) {
+            fill: $white
+        }
+    }
+
+    &__account {
+        fill: $grey;
+        width: rem(25);
+        height: rem(25);
+
+
+        @media screen and (min-width: $l) {
+            fill: $white
+        }
+    }
+}

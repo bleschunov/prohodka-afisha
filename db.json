@@ -1,0 +1,199 @@
+{
+    "events": [
+        {
+            "id": 1,
+            "title": "Виктор Цой. Путь героя",
+            "date": {
+                "year": 2022,
+                "month": 3,
+                "day": 22,
+                "hour": 12,
+                "minutes": 0
+            },
+            "location": "Манеж",
+            "description": "Выставка-байопик «Виктор Цой. Путь героя» пройдёт в Центральном выставочном зале «Манеж» и откроет юбилейный год Виктора Цоя — 21 июня 2022 года ему исполнилось бы 60 лет. Виктор Цой остается актуальным героем не только для тех, кто ходил на его концерты, но и для тех, кто родился намного позже его смерти.",
+            "thumbnail": "https://i.postimg.cc/D0qyg4th/coi.png",
+            "priceFrom": 600,
+            "ageFrom": 12,
+            "city": "moskva",
+            "type": "concerts"
+        },
+        {
+            "id": 2,
+            "title": "Юбилейный концерт Галкина",
+            "date": {
+                "year": 2023,
+                "month": 4,
+                "day": 1,
+                "hour": 19,
+                "minutes": 0
+            },
+            "location": "Барвиха Luxury Village",
+            "description": "Максим Галкин своим примером доказывает, что талантливый человек талантлив во всём. Яркий и харизматичный, он нравится и представителям нового поколения, и зрителям более старшего возраста. Артист тонко чувствует настроение публики и разговаривает с ней на одном языке. Среди его номеров юмористические миниатюры, реалистичные пародии, ироничные монологи. Даже простые зарисовки обычной жизни в его исполнении могут развеселить кого угодно. Приходите на сольный концерт Максима Галкина 2 апреля и заряжайтесь хорошим настроением!",
+            "thumbnail": "https://i.postimg.cc/VdPmZCdm/1603119392.jpg",
+            "priceFrom": 8000,
+            "ageFrom": 12,
+            "city": "moskva",
+            "type": "concerts"
+        },
+        {
+            "id": 3,
+            "title": "Киркоров. 40 лет",
+            "date": {
+                "year": 2022,
+                "month": 4,
+                "day": 27,
+                "hour": 19,
+                "minutes": 0
+            },
+            "location": "Кремлёвский дворец",
+            "description": "Филипп Киркоров умеет удивлять как никто другой! Именно поэтому Филипп удерживает статус поп-короля российской сцены и является самым востребованным артистом. Его песни любимы миллионами не только в России, но и далеко за ее пределами.",
+            "thumbnail": "https://i.postimg.cc/kDb7ycMT/239151.jpg",
+            "priceFrom": 1000,
+            "ageFrom": 6,
+            "city": "moskva",
+            "type": "concerts"
+        },
+        {
+            "id": 4,
+            "title": "Oxxxymiron. Впервые за 5 лет",
+            "date": {
+                "year": 2022,
+                "month": 3,
+                "day": 22,
+                "hour": 12,
+                "minutes": 0
+            },
+            "location": "Adrenaline Stadium",
+            "description": "Выставка-байопик «Виктор Цой. Путь героя» пройдёт в Центральном выставочном зале «Манеж» и откроет юбилейный год Виктора Цоя — 21 июня 2022 года ему исполнилось бы 60 лет. Виктор Цой остается актуальным героем не только для тех, кто ходил на его концерты, но и для тех, кто родился намного позже его смерти.",
+            "thumbnail": "https://i.postimg.cc/Q96KkqX8/500x500.jpg",
+            "priceFrom": 600,
+            "ageFrom": 18,
+            "city": "moskva",
+            "type": "festivals"
+        },
+        {
+            "id": 5,
+            "title": "Make Some Noize Tour",
+            "date": {
+                "year": 2022,
+                "month": 4,
+                "day": 29,
+                "hour": 20,
+                "minutes": 0
+            },
+            "location": "VTB Arena",
+            "description": "Noize MC сыграет в Москве концерт-презентацию нового альбома «Выход в город» — самого зрелого и долгожданного релиза артиста, чьи треки звонко резонируют с текущим временем. В конце прошлого года Noize MC выпустил десятый студийный альбом «Выход в город». Отправной точкой подготовки пластинки можно считать знаковый видеоклип «Все как у людей» — кавер-версия песни Егора Летова сходу задала высокую планку, а весь период с 2019 по 2021 год оказался одним из самых продуктивных в творчестве Ивана Алексеева — помимо альбома, за это время Noize MC успел зарелизить с десяток синглов и фитов.",
+            "thumbnail": "https://i.postimg.cc/BLd408p5/66923.jpg",
+            "priceFrom": 3000,
+            "ageFrom": 12,
+            "city": "moskva",
+            "type": "festivals"
+        },
+        {
+            "id": 6,
+            "title": "Ludovico Einaudi",
+            "date": {
+                "year": 2022,
+                "month": 3,
+                "day": 23,
+                "hour": 19,
+                "minutes": 0
+            },
+            "location": "Crocus City Hall",
+            "description": "Людовико Эйнауди вне всяких сомнений — один из самых выдающихся представителей неоклассики. Каждый его альбом получает мировое признание. Жизнеутверждающие и пронзительные мелодии итальянца звучат в культовых фильмах «1+1», триумфаторе последнего «Оскара» «Земля кочевников», «Черный лебедь» Даррена Аронофски, «Мамочка» Ксавье Долана. Сегодня, когда сам Эйнауди уже долгое время не дает концертов с оркестром, агентство «Неоклассика», впервые познакомившее российских слушателей с творчеством этого прекрасного композитора, дарит уникальную возможность насладиться его лучшими произведениями в исполнении виртуозных музыкантов «Солисты Неоклассика» и струнного оркестра. Все концерты организованы с учетом действующих региональных ограничений по рассадке и отвечают методическим рекомендациям Федеральной службы по надзору в сфере защиты прав потребителей и благополучия человека.",
+            "thumbnail": "https://i.postimg.cc/vDq5WGBr/494c-Ray-Tarantino-Web.jpg",
+            "priceFrom": 1000,
+            "ageFrom": 16,
+            "city": "sankt-peterburg",
+            "type": "festivals"
+        },
+        {
+            "id": 7,
+            "title": "YungBlud",
+            "date": {
+                "year": 2022,
+                "month": 3,
+                "day": 22,
+                "hour": 12,
+                "minutes": 0
+            },
+            "location": "Клуб Вагабунд",
+            "description": "Выставка-байопик «Виктор Цой. Путь героя» пройдёт в Центральном выставочном зале «Манеж» и откроет юбилейный год Виктора Цоя — 21 июня 2022 года ему исполнилось бы 60 лет. Виктор Цой остается актуальным героем не только для тех, кто ходил на его концерты, но и для тех, кто родился намного позже его смерти.",
+            "thumbnail": "https://i.postimg.cc/7bWT5XsX/66007.jpg",
+            "priceFrom": 1000,
+            "ageFrom": 16,
+            "city": "sankt-peterburg",
+            "type": "parties"
+        },
+        {
+            "id": 8,
+            "title": "Imagine Dragons. Thunder Tour",
+            "date": {
+                "year": 2022,
+                "month": 6,
+                "day": 6,
+                "hour": 21,
+                "minutes": 0
+            },
+            "location": "Известия Hall",
+            "description": "В московском клубе «Известия Hall» выступит Yungblud — громкий проект молодого британца-мультиинструменталиста Доминика Харрисона. Его жанровая экспансия не так уж экзотична для современного блендера постмодернизма: рок-хулиган с гитарой, совершающий набеги на ска-кварталы и чувствующий себя как дома в хип-хоп пригородах Лондона. В июле прошлого года музыкант подтвердил свое творческое совершеннолетие релизом дебютного альбома 21st Century Liability, а с начала 2019 выпустил уже два новых сингла: Loner и 11 Minutes, сняв к ним официальные видео. В считанные дни счет просмотров пошел на миллионы. 11 Minutes — коллаборация с подругой Доминика, сверхновой звездой Америки певицей Halsey при участии барабанщика Blink-182 Трэвис Баркера. Сингл стал для Yungblud билетом в серьезные чарты Европы, Австралии и Америки, где поднялся на седьмую строчку US Hot Rock Songs.",
+            "thumbnail": "https://i.postimg.cc/PpLT9bWr/ab6761610000e5eb920dc1f617550de8388f368e.jpg",
+            "priceFrom": 3500,
+            "ageFrom": 6,
+            "city": "sankt-peterburg",
+            "type": "parties"
+        },
+        {
+            "id": 9,
+            "title": "Billie Eilish. Happier Than Ever",
+            "date": {
+                "year": 2022,
+                "month": 8,
+                "day": 28,
+                "hour": 22,
+                "minutes": 0
+            },
+            "location": "VTB Arena",
+            "description": "В Ледовом дворце впервые выступит американская певица и сонграйтер Билли Айлиш. Восходящая звезда альтернативной поп-сцены выстрелила первым синглом Ocean Eyes три года назад, за месяц до своего пятнадцатилетия. Хит, набравший к октябрю 2018 года более 132 миллионов прослушиваний на Spotify, Билли записала с подачи старшего брата — певца, актера и музыкального продюсера Финнеаса О’Коннелла. Всего семейный тандем выпустил уже полтора десятка композиций, среди которых закрепившая успех дебюта Bellyache и мультиплатиновый хит Lovely в дуэте с R&B-исполнителем Халидом (Khalid).",
+            "thumbnail": "https://i.postimg.cc/bZz8pfx5/Billie-Eilish-Happier-Than-Ever-jpeg.webp",
+            "priceFrom": 4000,
+            "ageFrom": 16,
+            "city": "sankt-peterburg",
+            "type": "parties"
+        },
+        {
+            "id": 10,
+            "title": "Twenty One Pilots. SAI Tour",
+            "date": {
+                "year": 2022,
+                "month": 7,
+                "day": 12,
+                "hour": 20,
+                "minutes": 0
+            },
+            "location": "VTB Arena",
+            "description": "ВВ начале февраля 2019, через два с лишним года после первого визита в Россию дуэт из Огайо TWENTY ØNE PILØTS выступит в Москве и Санкт-Петербурге в рамках мирового THE BANDITØ TØUR. Авторы и исполнители расслабленных и одновременно упругих композиций на стыке инди-рока, альтернативного рэпа и рэгги с разного рода электронными топпингами, лауреаты Грэмми и премии Billboard готовы отметить десятилетие творческой деятельности, большая часть которой проходила в родном американском андеграунде. Прыжок в мейнстрим стал неожиданным как для фэндома группы, именующего себя «Skeleton Clique», так и для самих музыкантов, не утративших до настоящего времени свою инди-шероховатост.",
+            "thumbnail": "https://i.postimg.cc/4YBG32wx/Twenty-One-Pilots-by-Ashley-Osborn1-jpg.webp",
+            "priceFrom": 3000,
+            "ageFrom": 21,
+            "city": "sankt-peterburg",
+            "type": "parties"
+        }
+    ],
+    "types": [
+        {
+            "titleRu": "Вечеринки",
+            "titleEn": "parties"
+        },
+        {
+            "titleRu": "Фестивали",
+            "titleEn": "festivals"
+        },
+        {
+            "titleRu": "Концерты",
+            "titleEn": "concerts"
+        }
+    ],
+    "cities": [{"nameRu":"Москва","nameEn":"moskva"},{"nameRu":"Санкт-петербург","nameEn":"sankt-peterburg"},{"nameRu":"Абакан","nameEn":"abakan"},{"nameRu":"Анапа","nameEn":"anapa"},{"nameRu":"Архангельск","nameEn":"arkhangelsk"},{"nameRu":"Астрахань","nameEn":"astrakhan"},{"nameRu":"Барнаул","nameEn":"barnaul"},{"nameRu":"Белгород","nameEn":"belgorod"},{"nameRu":"Благовещенск","nameEn":"blagoveshchensk"},{"nameRu":"Брянск","nameEn":"bryansk"},{"nameRu":"Великий","nameEn":"velikii"},{"nameRu":"Новгород","nameEn":"novgorod"},{"nameRu":"Владивосток","nameEn":"vladivostok"},{"nameRu":"Владимир","nameEn":"vladimir"},{"nameRu":"Волгоград","nameEn":"volgograd"},{"nameRu":"Вологда","nameEn":"vologda"},{"nameRu":"Воронеж","nameEn":"voronezh"},{"nameRu":"Геленджик","nameEn":"gelendzhik"},{"nameRu":"Екатеринбург","nameEn":"yekaterinburg"},{"nameRu":"Иваново","nameEn":"ivanovo"},{"nameRu":"Ижевск","nameEn":"izhevsk"},{"nameRu":"Иркутск","nameEn":"irkutsk"},{"nameRu":"Йошкар-ола","nameEn":"yoshkar-ola"},{"nameRu":"Казань","nameEn":"kazan"},{"nameRu":"Калининград","nameEn":"kaliningrad"},{"nameRu":"Калуга","nameEn":"kaluga"},{"nameRu":"Кемерово","nameEn":"kemerovo"},{"nameRu":"Киров","nameEn":"kirov"},{"nameRu":"Краснодар","nameEn":"krasnodar"},{"nameRu":"Красноярск","nameEn":"krasnoyarsk"},{"nameRu":"Крым","nameEn":"krim"},{"nameRu":"Курск","nameEn":"kursk"},{"nameRu":"Лазаревское","nameEn":"lazarevskoe"},{"nameRu":"Липецк","nameEn":"lipetsk"},{"nameRu":"Магнитогорск","nameEn":"magnitogorsk"},{"nameRu":"Мурманск","nameEn":"murmansk"},{"nameRu":"Набережные","nameEn":"naberezhnie"},{"nameRu":"Челны","nameEn":"chelni"},{"nameRu":"Нижний","nameEn":"nizhnii"},{"nameRu":"Новгород","nameEn":"novgorod"},{"nameRu":"Новокузнецк","nameEn":"novokuznetsk"},{"nameRu":"Новороссийск","nameEn":"novorossiisk"},{"nameRu":"Новосибирск","nameEn":"novosibirsk"},{"nameRu":"Омск","nameEn":"omsk"},{"nameRu":"Оренбург","nameEn":"orenburg"},{"nameRu":"Орёл","nameEn":"oryol"},{"nameRu":"Орск","nameEn":"orsk"},{"nameRu":"Пенза","nameEn":"penza"},{"nameRu":"Пермь","nameEn":"perm"},{"nameRu":"Петрозаводск","nameEn":"petrozavodsk"},{"nameRu":"Псков","nameEn":"pskov"},{"nameRu":"Ростов-на-дону","nameEn":"rostov-na-donu"},{"nameRu":"Рязань","nameEn":"ryazan"},{"nameRu":"Самара","nameEn":"samara"},{"nameRu":"Саранск","nameEn":"saransk"},{"nameRu":"Саратов","nameEn":"saratov"},{"nameRu":"Смоленск","nameEn":"smolensk"},{"nameRu":"Сочи","nameEn":"sochi"},{"nameRu":"Ставрополь","nameEn":"stavropol"},{"nameRu":"Старый","nameEn":"starii"},{"nameRu":"Оскол","nameEn":"oskol"},{"nameRu":"Сургут","nameEn":"surgut"},{"nameRu":"Тамбов","nameEn":"tambov"},{"nameRu":"Тверь","nameEn":"tver"},{"nameRu":"Тольятти","nameEn":"tolyatti"},{"nameRu":"Томск","nameEn":"tomsk"},{"nameRu":"Тула","nameEn":"tula"},{"nameRu":"Тюмень","nameEn":"tyumen"},{"nameRu":"Улан-удэ","nameEn":"ulan-ude"},{"nameRu":"Ульяновск","nameEn":"ulyanovsk"},{"nameRu":"Уфа","nameEn":"ufa"},{"nameRu":"Хабаровск","nameEn":"khabarovsk"},{"nameRu":"Чайковский","nameEn":"chaikovskii"},{"nameRu":"Челябинск","nameEn":"chelyabinsk"},{"nameRu":"Череповец","nameEn":"cherepovets"},{"nameRu":"Чита","nameEn":"chita"},{"nameRu":"Южно-сахалинск","nameEn":"yuzhno-sakhalinsk"},{"nameRu":"Ярославль","nameEn":"yaroslavl"}]
+}

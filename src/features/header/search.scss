@@ -1,0 +1,88 @@
+@import '../../app/styles/variables.scss';
+
+.search {
+    position: relative;
+    flex-grow: 1;
+    max-width: rem(510);
+    height: rem(45);
+
+    &__search {
+        z-index: 45;
+        padding-right: rem(15);
+        display: flex;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        position: absolute;
+        border: 1px solid $grey-3;
+        border-radius: rem(10);
+        color: $grey-2;
+        background: $white;
+    }
+
+    &__inputLabel {
+        align-self: stretch;
+        flex-grow: 1;
+    }
+
+    &__input {
+        font-size: rem(14);
+        padding-left: rem(15);
+        height: 100%;
+        width: 100%;
+        color: $grey;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__icon {
+        fill: $grey;
+        width: rem(25);
+        height: rem(25);
+
+        @media screen and (min-width: $l) {
+            fill: $grey;
+        }
+    }
+
+    &__window {
+        display: none;
+        flex-direction: column;
+        gap: 30px;
+        position: absolute;
+        z-index: 40;
+        background: rgba(255, 255, 255, 0.85);
+        box-shadow: 0px 20px 50px 10px rgba(0, 0, 0, 0.15);
+        backdrop-filter: blur(20px);
+        bottom: 0;
+        width: 100%;
+        border-radius: 0 0 rem(10) rem(10);
+
+        $shift: rem(9);
+        padding: calc(rem(15) + $shift) rem(15) rem(15) rem(15);
+        transform: translateY( calc(100% - $shift) );
+    }
+    &__window-enter {
+        opacity: 0;
+        display: flex;
+    }
+    &__window-enter-active {
+        display: flex;
+        opacity: 1;
+        transition: opacity 300ms;
+    }
+    &__window-enter-done {
+        display: flex;
+    }
+    &__window-exit {
+        display: flex;
+        opacity: 1;
+    }
+    &__window-exit-active {
+        display: flex;
+        opacity: 0;
+        transition: opacity 300ms;
+    }
+}

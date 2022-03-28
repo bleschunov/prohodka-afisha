@@ -1,0 +1,106 @@
+@import '../../../app/styles/index.scss';
+@import '../../../app/styles/variables.scss';
+
+.card {
+    display: inline-block;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    border-radius: rem(10);
+    color: $white;
+    aspect-ratio: 206 / 265;
+
+    &__inner {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: flex-end;
+        flex-direction: column
+    }
+
+    &__blur {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        background: rgba(42, 42, 42, 0.45);
+        backdrop-filter: blur(20px);
+        padding: rem(15) rem(20);
+        min-height: rem(144);
+        border-radius: 0 0 rem(10) rem(10);
+    }
+
+    &__title {
+        font-size: rem(18);
+        font-weight: bold;
+    }
+
+    &__date {
+        font-size: rem(12);
+    }
+
+    &__location {
+        font-size: rem(12);
+    }
+
+    &__price {
+        background-color: $green;
+        font-size: rem(10);
+        border-radius: rem(15);
+        display: inline-block;
+        padding: rem(7) rem(11);
+        color: $black;
+
+        &:before {
+            content: 'от '
+        }
+
+        &:after {
+            content: ' руб.'
+        }
+    }
+
+    &__like {
+        height: rem(26);
+        width: rem(26);
+        position: absolute;
+        bottom: rem(15);
+        right: rem(20);
+        stroke: $red;
+        fill: transparent;
+        transition: fill 300ms;
+        cursor: pointer;
+
+        &:hover {
+            fill: $red;
+        }
+
+        &_active {
+            fill: $red;
+        }
+    }
+
+    &__repostWrapper {
+        display: grid;
+        place-items: center;
+        position: absolute;
+        top: rem(15);
+        right: rem(20);
+        cursor: pointer;
+        width: rem(26);
+        height: rem(26);
+        border-radius: rem(5);
+        background-color: rgba(0, 0, 0, .2);
+
+        &:hover .card__repost {
+            fill: $green;
+        }
+    }
+
+    &__repost {
+        fill: $white;
+        transition: fill 300ms;
+        width: rem(13);
+        height: rem(13);
+    }
+}

@@ -1,0 +1,11 @@
+@import '../../app/styles/units.scss';
+
+.cardList {
+    &__rowOfCards {
+        margin-bottom: rem(50);
+
+        &:last-child {
+            margin-bottom: rem(80);
+        }
+    }
+}

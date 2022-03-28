@@ -1,0 +1,104 @@
+@import '../../app/styles/variables.scss';
+
+.dropdown {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: rem(5);
+    justify-self: end;
+    transition: all 300ms;
+    
+    width: rem(240);
+    height: rem(50);
+    background-color: $darkGrey;
+    border: 1px solid $grey-2;
+    border-radius: rem(10);
+    padding: 0 rem(10);
+    color: $white;
+    text-align: left;
+    cursor: pointer;
+
+    &[open] {
+        border-radius: rem(10) rem(10) 0 0;
+        background-color: $white;
+        color: $black;
+
+        & .dropdown__arrow {
+            transform: rotate(-180deg);
+        }
+    }
+    
+    &__arrowWrapper {
+        justify-self: end;
+        display: grid;
+        place-items: center;
+        width: rem(18);
+        height: rem(18);
+        background-color: $green;
+        border-radius: rem(5);
+    }
+    
+    &__arrow {
+        fill: $white;
+        width: rem(12);
+        height: rem(12);
+        transition: transform 300ms;
+    }
+
+    &__location {
+        fill: $green;
+        width: rem(20);
+        height: rem(20);
+    }
+
+    &__window {
+        display: none;
+        position: absolute;
+        background-color: $white;
+        color: $black;
+        bottom: 0;
+        right: 0;
+        transform: translateY(100%);
+        z-index: 100;
+        padding: rem(20);
+        grid-template-columns: repeat(auto-fit, minmax(155px, auto));
+        column-gap: rem(60);
+        row-gap: rem(5);
+        width: 70vw;
+        border-radius: rem(10) 0 rem(10) rem(10);
+    }
+    &__window-enter {
+        opacity: 0;
+        display: grid;
+    }
+    &__window-enter-active {
+        opacity: 1;
+        display: grid;
+        transition: opacity 300ms;
+    }
+    &__window-enter-done {
+        display: grid;
+    }
+    &__window-exit {
+        opacity: 1;
+        display: grid;
+    }
+    &__window-exit-active {
+        opacity: 0;
+        display: grid;
+        transition: opacity 300ms;
+    }
+
+    &__item {
+
+        &_selected {
+            font-weight: bold;
+        }
+
+        &:hover {
+            font-weight: bold;
+        }
+    }
+
+}
